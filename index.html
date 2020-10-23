@@ -9,50 +9,331 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./favicon.ico" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <style>
+        .myheadingunderline h1 {
+            font-weight: 300;
+            display: inline-block;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .myheadingunderline h1:before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 1px;
+            bottom: 0;
+            left: 0%;
+            border-bottom: 4px solid black;
+        }
+
+        html,
+        body {
+            padding: 0 !important;
+            margin: 0 !important;
+            overflow-x: hidden;
+        }
+
+        .parallax1 {
+            background-image: url('./assets/wallpaper.jpg');
+
+            width: 100vw;
+            height: 100vh;
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2 {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('./assets/haumc.jpeg');
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimage {
+            -webkit-filter: blur(2.5px);
+            opacity: 91%;
+            -moz-filter: blur(1px);
+            -ms-filter: blur(1px);
+            -o-filter: blur(2px);
+            filter: blur(2px);
+            width: 100%;
+            background-repeat: no-repeat;
+            padding-top: -30%;
+            overflow: hidden;
+        }
+
+        p,
+        h1,
+        h3,
+        h2,
+        h4,
+        h5 {
+            font-family: 'Poppins', sans-serif !important
+        }
+
+
+        #btnScroll {
+            display: inline-block;
+            background-color: black;
+            width: 50px;
+            height: 51px;
+            text-align: center;
+            border-radius: 1px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s,
+                opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #btnScroll::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        #btnScroll:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        #btnScroll:active {
+            background-color: #555;
+        }
+
+        #btnScroll.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (min-width: 500px) {
+            #btnScroll {
+                margin: 30px;
+            }
+        }
+
+        q {
+            font-size: 30px;
+            quotes: "\201C""\201D""\2018""\2019";
+            padding: 10px 20px;
+            line-height: 1.4;
+        }
+
+
+        q:before {
+            content: open-quote;
+            display: inline;
+            height: 0;
+            line-height: 0;
+            left: -10px;
+            position: relative;
+            top: 5px;
+            color: #000;
+            font-size: 1.5em;
+        }
+
+        q:after {
+            content: close-quote;
+            display: inline;
+            height: 0;
+            line-height: 0;
+            left: 10px;
+            position: relative;
+            top: 5px;
+            color: #000;
+            font-size: 1.5em;
+        }
+
+        /* Style inputs */
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 0;
+        }
+
+        ul.social-network li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        .social-network a.icoInstagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+
+        .social-network a.icoFacebook:hover {
+            background-color: #3B5998;
+        }
+
+
+        .social-network a.icoPinterest:hover {
+            background-color: #E60023;
+        }
+
+        .social-network a.icoTwitter:hover {
+            background-color: #00acee;
+        }
+
+        .social-network a.icoLinkedin:hover {
+            background-color: #007bb7;
+        }
+
+        .social-network a.icoFacebook:hover i,
+        .social-network a.icoPinterest:hover i,
+        .social-network a.icoTwitter:hover i,
+        .social-network a.icoInstagram:hover i {
+            color: #fff;
+        }
+
+        .social-network a.socialIcon:hover,
+        .socialHoverClass {
+            color: #44BCDD;
+        }
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            width: 90px;
+            height: 85px;
+            margin: 30px;
+            font-size: 54px;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i,
+        .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .social-circle i {
+            color: #595959;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        .social-network a {
+            background-color: #F9F9F9;
+        }
+    </style>
 </head>
 
 <body>
-    <nav style="z-index: 100; height: 80px;" class="myheader sticky navbar navbar-expand-lg navbar-light bg-light">
-        <div style="padding: 140px;">
-            <a href="./index.html"><img src="./assets/logorbrand.png" alt="" navbar-brand style="width: 150px; background-repeat: no-repeat; background-size: 100% 100%; max-height: 100px;
-                    max-width: 400px;" /></a>
-        </div>
-        <div style="padding: 140px;" class="ml-auto">
-            <ul class=" navbar-nav">
-                <li class="nav-item active">
-                    <a href="./team.html" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="./team.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="./index.html" class="nav-link">Events</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div style="position: relative; background-image: url('./assets/wallpaper.jpg');" id=" section1"
-        class="d-flex p-2 justify-content-center section">
-        <div style="color: black;" class="my-auto text-center w-100">
-            <h1 style="font-size: 3.5rem;
-                    font-weight: 700;">
-                MARKETING CLUB @ HAU
-            </h1>
+    <div class="parallax1" style="display: grid; place-items: center;">
+        <div>
+            <div style="color: black;" class="my-auto text-center w-100">
+                <h1 style="font-size: 4rem;
+                    font-family: 'Oswald', sans-serif !important; font-weight: 600;">
+                    MARKETING CLUB @ HAU
+                </h1>
 
-            <p style="font-size: 1.5rem;">
-                A student club at Hellenic American University
-            </p>
+                <p style="font-size: 1.5rem;">
+                    The most passionate student club of Hellenic American University
+                </p>
+            </div>
         </div>
+
+
     </div>
 
-    <div id="section2" style="background-image: url('./assets/haumc.jpeg');"
-        class="d-flex p-2 justify-content-center section">
+    <div class="parallax2 d-flex p-2 justify-content-center " id="section2">
         <div style="color: white;" class="my-auto text-center w-100">
             <h1 style="font-size: 3.5rem;
-                            font-weight: 700;">
+                             font-family: 'Oswald', sans-serif !important;  font-weight: 600;">
                 WHO WE ARE
             </h1>
             <br />
@@ -79,150 +360,371 @@
                 diplomacy and teamwork, all in the basis of having a good time.
             </p>
             <br />
-
-            <br /><br />
-
-            <a href="https://www.marketingclubhbs.com/team" style="border-radius: 300px;
-                    background-color: transparent;
-        border: 2px solid #fff !important;
-        color: #fff;
-        font-size: 1.4rem;
-        padding: 10px;
-        border-top-left-radius: 300px;
-        border-top-right-radius: 300px;
-        border-bottom-right-radius: 300px;
-        cursor: pointer;
-        text-decoration: none;
-        border-bottom-left-radius: 300px;">MEET THE TEAM</a>
         </div>
     </div>
 
-    <div style="background-image: url('./assets/teamwork.jpg'); background-repeat: no-repeat; background-size: 100%  "
-        class="d-flex p-2 justify-content-center section">
-        <div class="my-auto text-center w-100">
-            <h1 style="font-size: 4rem;
-                                font-weight: 700; color: black">
-                AT HAUMC, WE ARE ALL ONE
-            </h1>
-            <p style="font-size: 1.5rem; color: black">
-                We love people of any race, color and national or ethnic origin and we
-                do not discriminate against anyone.
-            </p>
-            <p style="font-size: 1.5rem; color: black">
-                We do work together, play together, learn together.
-            </p>
-        </div>
-    </div>
-
-    <div id="section3" style="background-repeat: no-repeat; background-size: 100% 100%; "
-        class="d-flex p-2 justify-content-center section">
-        <div class="my-auto text-center w-100">
-            <h1 style="font-size: 4rem;
-                            font-weight: 700; color: black">
-                HOW CAN WE HELP YOU?
-            </h1>
-        </div>
-    </div>
-
-    <div id="section4" style="background-color:white; padding: 0 !important;"
-        class="d-flex p-2 justify-content-center section">
-        <div
-            style="margin-top: 8rem; padding: 0 !important; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows:1fr 1fr; ">
-            <div style="padding: 10px;" class="box1 ">
-                <h1 class="text-center" style="font-size: 3.5rem;">Education</h1>
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-            </div>
-            <div style="padding: 10px;" class="box2 ">
-                <h1 class="text-center" style="font-size: 3.5rem;">Entertainment</h1>
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-
-                <p class="text-justify" style="font-size: 1.3rem; padding: 10px;">
-                    1. We distribute professional opportunities focused into different
-                    sectors such as CPG, tech, retail,
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="mainfooter" role="contentinfo">
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8"></div>
-                    <div class="col-md-4">
-                        <h4>Follow Us</h4>
-                        <ul class="social-network social-circle">
-                            <li>
-                                <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            </li>
-                        </ul>
+    <br><br>
+    <br>
+    <div id="section4" style="background-color:white; padding: 0 !important">
+        <div class="container myheadingunderline">
+            <h1 style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;" ;>
+                Meet the team</h1>
+            <div style=" display: grid; place-items: center;">
+                <section class="cards">
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img src="./assets/picme.jpg" alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Ultra high
+                                aesthetics, a black and white striped tent and a homey vibe is what you first
+                                notice
+                                when you land at
+                                Millybird. But there’s so much more thought put into this cosy corner of
+                                Pagrati,
+                                you
+                                definitely need to visit soon.
+                                Just don’t tell too many of your friends, so that we can still retain the vibe!
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Alexandros Kourtis</p>
+                            <p class="card__title text--small">Software Solutions Enginner</p>
+                        </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img src="./assets/ana.jpg" alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Ultra high
+                                aesthetics, a black and white striped tent and a homey vibe is what you first
+                                notice
+                                when you land at
+                                Millybird. But there’s so much more thought put into this cosy corner of
+                                Pagrati,
+                                you
+                                definitely need to visit soon.
+                                Just don’t tell too many of your friends, so that we can still retain the vibe!
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Alexandros Kourtis</p>
+                            <p class="card__title text--small">Software Solutions Enginner</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img src="./assets/manos.jpg" alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Ultra high
+                                aesthetics, a black and white striped tent and a homey vibe is what you first
+                                notice
+                                when you land at
+                                Millybird. But there’s so much more thought put into this cosy corner of
+                                Pagrati,
+                                you
+                                definitely need to visit soon.
+                                Just don’t tell too many of your friends, so that we can still retain the vibe!
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Alexandros Kourtis</p>
+                            <p class="card__title text--small">Software Solutions Enginner</p>
+                        </div>
+                    </div>
+
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+            <div class="text-center">
+                <p>Each member is appreciated equally &#10084;&#65039;</p>
+            </div>
+            <br>
+            <br>
+
+            <div class="container myheadingunderline">
+                <h1 style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Previous Events</h1>
+                <div id="getataste">
+                    <section class=" mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <img alt="Web Studio" class="img-fluid" src="./assets/event4.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                                    <div lang="en">
+                                        <h2 style="font-family: 'Piazzolla', serif;">Module Studio</h2>
+                                        <p style="font-family: 'Piazzolla', serif;" class="margin-top-s"><q>Ultra high
+                                                aesthetics, a black and white striped tent and a homey vibe is what you
+                                                first notice
+                                                when you land at
+                                                Just don’t tell too many of your friends, so that we can still retain
+                                                the vibe!
+                                            </q>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <section class=" mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-5 mr-auto d-flex align-items-center mt-4 mt-md-0">
+                                    <div lang="en">
+                                        <h2 style="font-family: 'Piazzolla', serif;">Module Studio</h2>
+                                        <p style="font-family: 'Piazzolla', serif;" class="margin-top-s"><q>Ultra high
+                                                aesthetics, a black and white striped tent and a homey vibe is what you
+                                                first notice
+                                                when you land at
+                                                Millybird. But there’s so much more thought put into this cosy corner of
+                                                Pagrati,
+                                            </q>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <img alt="Web Studio" class="img-fluid" src="./assets/event2.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <br />
-                <br />
-                <div class="row">
-                    <div class="col-md-12 copy">
-                        <p class="text-right" style="font-size: 1.6rem;">
-                            &copy; Copyright 2020 - Alexandros Kourtis
+
+                <br>
+                <br>
+
+            </div>
+
+
+            <!-- <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
                         </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1473283147055-e39c51463929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1534143046043-44af3469836b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
+                            alt="Detailed image description would go here." />
+                    </div>
+                    <div class="card__content">
+                        <p class="card__title text--medium">
+                            Here's the Title of an Awesome Course
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium">30 Min</p>
+                            <p class="card__price text--medium">Free</p>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
         </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+        <span class="d-flex p-2 justify-content-center ">
+            <a class="joinbtn" href="file:///C:/Users/akour/Desktop/haumcsitehtml/join.html"
+                style="border-radius: 50px;
+                                                border: 3px solid black !important;
+                                                color: black;
+                                                font-size: 1.5rem;
+                                                padding: 15px;
+                                                border-top-left-radius: 300px;
+                                                border-top-right-radius: 300px;
+                                                border-bottom-right-radius: 300px;
+                                                cursor: pointer;
+                                                text-decoration: none;
+                                                border-bottom-left-radius: 300px;  font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Join Now</a>
+        </span>
+        <br>
+        <br><br>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
 
-                if (this.hash !== "") {
-                    event.preventDefault();
+        <a id="btnScroll"></a>
 
-                    var hash = this.hash;
+        <footer class="font-small ">
+            <div style="background-color:#ccc; padding: 1   0px;" id="socialmedialine">
+                <ul class="social-network social-circle text-center" style="display: table !important;
+                                                                  margin: 0 auto !important;">
 
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                    <li><a href="#" class="icon icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#" class="icon icoPinterest" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                    <li><a href="#" class="icon icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <li><a href="#" class="icon icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
 
-                        window.location.hash = hash;
-                    });
-                }
+
+            <div class=" text-center py-3">© 2020 Copyright:
+                <a>HAU Marketing Club</a>
+            </div>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("a").on('click', function (event) {
+
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+
+                            window.location.hash = hash;
+                        });
+                    }
+                });
             });
-        });
-    </script>
+            const btnScroll = document.querySelector("#btnScroll");
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.documentElement.scrollTop > 1800) {
+                    btnScroll.style.visibility = 'visible';
+                    btnScroll.style.opacity = '1';
+                } else {
+                    btnScroll.style.visibility = 'hidden';
+                    btnScroll.style.opacity = '0';
+                }
+            }
+
+            btnScroll.addEventListener("click", function () {
+                $("html, body").animate({ scrollTop: 0 }, "slow")
+            })
+        </script>
 </body>
 
 </html>
