@@ -92,19 +92,6 @@
             background-size: cover;
         }
 
-        .bgimage {
-            -webkit-filter: blur(2.5px);
-            opacity: 91%;
-            -moz-filter: blur(1px);
-            -ms-filter: blur(1px);
-            -o-filter: blur(2px);
-            filter: blur(2px);
-            width: 100%;
-            background-repeat: no-repeat;
-            padding-top: -30%;
-            overflow: hidden;
-        }
-
         p,
         h1,
         h3,
@@ -341,6 +328,75 @@
         .social-network a {
             background-color: #F9F9F9;
         }
+
+        #scrolldown {
+            display: inline-block;
+            background-color: black;
+            width: 50px;
+            height: 51px;
+            text-align: center;
+            border-radius: 1px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s,
+                opacity .5s, visibility .5s;
+            opacity: 1;
+            visibility: visible;
+            z-index: 1000;
+        }
+
+        #scrolldown::after {
+            content: "\f078";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        #scrolldown:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        #scrolldown:active {
+            background-color: #555;
+        }
+
+        #scrolldown.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-wrapper {
+            text-align: center;
+            position: relative;
+            bottom: -200px;
+        }
+
+        .scroll {
+            -webkit-animation: scrolling 2s ease infinite;
+            -moz-animation: scrolling 2s ease infinite;
+            -o-animation: scrolling 2s ease infinite;
+            animation: scrolling 2s ease infinite;
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translate(0);
+            }
+
+            50% {
+                transform: translate(0, 20px);
+            }
+
+
+            100% {
+                transform: translate(0);
+            }
+        }
     </style>
 </head>
 
@@ -359,6 +415,9 @@
             </div>
         </div>
 
+        <div class="scroll scroll-wrapper">
+            <a style="text-decoration: none !important;" href="#section4" id="scrolldown"></a>
+        </div>
 
     </div>
 
@@ -411,7 +470,8 @@
                         </div>
                         <div class="card__content">
                             <p class="card__title text--medium">
-                                I'm the Programmer of the team. My aim is to integrate reliable and performant software
+                                I'm the Programmer of the team. My aim is to integrate reliable and performant
+                                software
                                 tools into the world of business to
                                 solve real problems.
                             </p>
@@ -428,8 +488,10 @@
                         </div>
                         <div class="card__content">
                             <p class="card__title text--medium">
-                                Hello Im Helene or Helen or Ελεν or Ελενη or or or or or or or or or or or or or or or
-                                or or or or or or or or or or or or or or or or or or or or or or or or or or or or or
+                                Hello Im Helene or Helen or Ελεν or Ελενη or or or or or or or or or or or or or or
+                                or
+                                or or or or or or or or or or or or or or or or or or or or or or or or or or or or
+                                or
                                 or or or or
                             </p>
                             <br>
@@ -780,8 +842,9 @@
                     }
                 });
             });
-            const btnScroll = document.querySelector("#btnScroll");
 
+            const btnScroll = document.querySelector("#btnScroll");
+            const scrolldown = document.querySelector("#scrolldown");
             window.onscroll = function () { scrollFunction() };
 
             function scrollFunction() {
@@ -791,6 +854,14 @@
                 } else {
                     btnScroll.style.visibility = 'hidden';
                     btnScroll.style.opacity = '0';
+                }
+
+                if (document.documentElement.scrollTop > 500) {
+                    scrolldown.style.visibility = 'hidden';
+                    scrolldown.style.opacity = '0';
+                } else {
+                    scrolldown.style.visibility = 'visible';
+                    scrolldown.style.opacity = '1';
                 }
             }
 
