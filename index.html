@@ -18,6 +18,32 @@
 
 
     <style>
+        .eventimg:hover {
+            transform: translate(-7px, -7px);
+        }
+
+        .eventimg2:hover {
+            transform: translate(7px, -7px);
+        }
+
+
+        .card img {
+            border-radius: 3px;
+            box-shadow: 10px;
+        }
+
+        .eventimg2 {
+            transition: all 0.3s ease 0s;
+            width: 700px;
+            box-shadow: 0px 0px 50px 0px #888888;
+        }
+
+        .eventimg {
+            transition: all 0.3s ease 0s;
+            box-shadow: 0px 0px 50px 0px #888888;
+            width: 700px;
+        }
+
         .myheadingunderline h1 {
             font-weight: 300;
             display: inline-block;
@@ -40,10 +66,11 @@
             padding: 0 !important;
             margin: 0 !important;
             overflow-x: hidden;
+            background-color: #f3f3f3 !important;
         }
 
         .parallax1 {
-            background-image: url('./assets/wallpaper.jpg');
+            background-image: url('./assets/test2.jpg');
 
             width: 100vw;
             height: 100vh;
@@ -135,16 +162,21 @@
             }
         }
 
-        q {
+
+        .eventdesc2 {
             font-size: 30px;
-            quotes: "\201C""\201D""\2018""\2019";
+            padding: 10px 20px;
+            line-height: 1.4;
+        }
+
+        .eventdesc {
+            font-size: 30px;
             padding: 10px 20px;
             line-height: 1.4;
         }
 
 
-        q:before {
-            content: open-quote;
+        .eventdesc:before {
             display: inline;
             height: 0;
             line-height: 0;
@@ -155,7 +187,7 @@
             font-size: 1.5em;
         }
 
-        q:after {
+        .eventdesc:after {
             content: close-quote;
             display: inline;
             height: 0;
@@ -365,15 +397,66 @@
 
     <br><br>
     <br>
-    <div id="section4" style="background-color:white; padding: 0 !important">
+    <div id="section4" style="padding: 0 !important">
         <div class="container myheadingunderline">
             <h1 style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;" ;>
                 Meet the team</h1>
+            <br><br>
             <div style=" display: grid; place-items: center;">
                 <section class="cards">
                     <div class="card">
                         <div class="card__image-container">
-                            <img src="./assets/picme.jpg" alt="Detailed image description would go here." />
+                            <img class="img-fluid" src="./assets/picme.jpg"
+                                alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                I'm the Programmer of the team. My aim is to integrate reliable and performant software
+                                tools into the world of business to
+                                solve real problems.
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Alexandros Kourtis</p>
+                            <p class="card__title text--small">Software Solutions / Programmer</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="img-fluid" src="./assets/helene.jpg"
+                                alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Hello Im Helene or Helen or Ελεν or Ελενη or or or or or or or or or or or or or or or
+                                or or or or or or or or or or or or or or or or or or or or or or or or or or or or or
+                                or or or or
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Helene Plemmenos</p>
+                            <p class="card__title text--small">MOTHAFUCKING CEO</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="img-fluid" src="./assets/manos.jpg"
+                                alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Manos WHASSUPManos WHASSUPManos WHASSUPManos WHASSUPManos WHASSUPManos WHASSUPManos
+                                WHASSUPManos WHASSUPManos WHASSUPManos
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Manos Valakis</p>
+                            <p class="card__title text--small">Head of Creative Solutions and assistant dev</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="img-fluid" src="./assets/ana.jpg"
+                                alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
                             <p class="card__title text--medium">
@@ -381,11 +464,25 @@
                                 aesthetics, a black and white striped tent and a homey vibe is what you first
                                 notice
                                 when you land at
-                                Millybird. But there’s so much more thought put into this cosy corner of
-                                Pagrati,
-                                you
-                                definitely need to visit soon.
-                                Just don’t tell too many of your friends, so that we can still retain the vibe!
+                            </p>
+                            <br>
+                            <p class="card__title text--small">~ Alexandros Kourtis</p>
+                            <p class="card__title text--small">Software Solutions Enginner</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="img-fluid" src="./assets/nani.jpg"
+                                alt="Detailed image description would go here." />
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title text--medium">
+                                Ultra high
+                                aesthetics, a black and white striped tent and a homey vibe is what you first
+                                notice
                             </p>
                             <br>
                             <p class="card__title text--small">~ Alexandros Kourtis</p>
@@ -395,7 +492,8 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img src="./assets/ana.jpg" alt="Detailed image description would go here." />
+                            <img class="img-fluid" src="./assets/bhushan.jpg"
+                                alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
                             <p class="card__title text--medium">
@@ -403,11 +501,6 @@
                                 aesthetics, a black and white striped tent and a homey vibe is what you first
                                 notice
                                 when you land at
-                                Millybird. But there’s so much more thought put into this cosy corner of
-                                Pagrati,
-                                you
-                                definitely need to visit soon.
-                                Just don’t tell too many of your friends, so that we can still retain the vibe!
                             </p>
                             <br>
                             <p class="card__title text--small">~ Alexandros Kourtis</p>
@@ -417,32 +510,22 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img src="./assets/manos.jpg" alt="Detailed image description would go here." />
+                            <img class="img-fluid" src="./assets/yasmeen.jpg"
+                                alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
                             <p class="card__title text--medium">
                                 Ultra high
                                 aesthetics, a black and white striped tent and a homey vibe is what you first
                                 notice
-                                when you land at
-                                Millybird. But there’s so much more thought put into this cosy corner of
-                                Pagrati,
-                                you
-                                definitely need to visit soon.
-                                Just don’t tell too many of your friends, so that we can still retain the vibe!
                             </p>
                             <br>
                             <p class="card__title text--small">~ Alexandros Kourtis</p>
                             <p class="card__title text--small">Software Solutions Enginner</p>
                         </div>
                     </div>
-
-
             </div>
 
-            <br>
-            <br>
-            <br>
             <br>
             <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
             <div class="text-center">
@@ -451,27 +534,22 @@
             <br>
             <br>
 
-            <div class="container myheadingunderline">
-                <h1 style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Previous Events</h1>
+            <div class="container ">
+                <h1 class="myheadingunderline"
+                    style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Previous Events</h1>
                 <div id="getataste">
                     <section class=" mt-5">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div>
+                                <div class="col-md-7">
+                                    <div class="eventimg">
                                         <img alt="Web Studio" class="img-fluid" src="./assets/event4.jpg" />
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                                <div class="col-md-3 col-lg-3 ml-auto d-flex align-items-center mt-4 mt-md-0">
                                     <div lang="en">
-                                        <h2 style="font-family: 'Piazzolla', serif;">Module Studio</h2>
-                                        <p style="font-family: 'Piazzolla', serif;" class="margin-top-s"><q>Ultra high
-                                                aesthetics, a black and white striped tent and a homey vibe is what you
-                                                first notice
-                                                when you land at
-                                                Just don’t tell too many of your friends, so that we can still retain
-                                                the vibe!
-                                            </q>
+                                        <p class="eventdesc2" style="font-family: 'Piazzolla', serif;">
+                                            When at TGIF &#127828; &#127828; !!
                                         </p>
                                     </div>
                                 </div>
@@ -485,21 +563,16 @@
                     <section class=" mt-5">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6 col-lg-5 mr-auto d-flex align-items-center mt-4 mt-md-0">
+                                <div class="col-md-3 col-lg-3 mr-auto d-flex align-items-center mt-4 mt-md-0">
                                     <div lang="en">
-                                        <h2 style="font-family: 'Piazzolla', serif;">Module Studio</h2>
-                                        <p style="font-family: 'Piazzolla', serif;" class="margin-top-s"><q>Ultra high
-                                                aesthetics, a black and white striped tent and a homey vibe is what you
-                                                first notice
-                                                when you land at
-                                                Millybird. But there’s so much more thought put into this cosy corner of
-                                                Pagrati,
-                                            </q>
+                                        </h1>
+                                        <p class="eventdesc" style="font-family: 'Piazzolla', serif;">When at the
+                                            National Garden of Athens &#128526;
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div>
+                                <div class="col-md-7">
+                                    <div class="eventimg2">
                                         <img alt="Web Studio" class="img-fluid" src="./assets/event2.jpg" />
                                     </div>
                                 </div>
@@ -636,7 +709,7 @@
                 </div> -->
             </section>
         </div>
-
+        <br>
         <span class="d-flex p-2 justify-content-center ">
             <a class="joinbtn" href="file:///C:/Users/akour/Desktop/haumcsitehtml/join.html"
                 style="border-radius: 50px;
@@ -662,11 +735,11 @@
                 <ul class="social-network social-circle text-center" style="display: table !important;
                                                                   margin: 0 auto !important;">
 
-                    <li><a href="#" class="icon icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <li><a target="_blank" href="https://www.facebook.com/haumarketingclub/" class="icon icoFacebook"
+                            title="Facebook"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="#" class="icon icoPinterest" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                    <li><a href="#" class="icon icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
-                    <li><a href="#" class="icon icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <li><a target="_blank" href="https://www.instagram.com/marketingclubhau/" class="icon icoInstagram"
+                            title="Instagram"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
