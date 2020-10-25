@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./favicon.ico" />
@@ -20,10 +19,12 @@
     <style>
         .eventimg:hover {
             transform: translate(-7px, -7px);
+            box-shadow: 0px 0px 20px 0px #888888;
         }
 
         .eventimg2:hover {
             transform: translate(7px, -7px);
+            box-shadow: 0px 0px 20px 0px #888888;
         }
 
 
@@ -35,12 +36,10 @@
         .eventimg2 {
             transition: all 0.3s ease 0s;
             width: 700px;
-            box-shadow: 0px 0px 50px 0px #888888;
         }
 
         .eventimg {
             transition: all 0.3s ease 0s;
-            box-shadow: 0px 0px 50px 0px #888888;
             width: 700px;
         }
 
@@ -70,7 +69,7 @@
         }
 
         .parallax1 {
-            background-image: url('./assets/test2.jpg');
+            background-image: url('./assets/landingpage.jpg');
 
             width: 100vw;
             height: 100vh;
@@ -330,12 +329,6 @@
         }
 
         #scrolldown {
-            display: inline-block;
-            background-color: black;
-            width: 50px;
-            height: 51px;
-            text-align: center;
-            border-radius: 1px;
             position: fixed;
             bottom: 30px;
             right: 30px;
@@ -356,11 +349,6 @@
             color: #fff;
         }
 
-        #scrolldown:hover {
-            cursor: pointer;
-            background-color: #333;
-        }
-
         #scrolldown:active {
             background-color: #555;
         }
@@ -368,10 +356,6 @@
         #scrolldown.show {
             opacity: 1;
             visibility: visible;
-        }
-
-        .scroll-wrapper {
-            text-align: center;
         }
 
         .scroll {
@@ -412,13 +396,11 @@
         </div>
     </div>
 
-    <div style="place-items: center; display: grid" class="text-center">
+    <div style="place-items: center; display: grid;">
         <div class="scroll scroll-wrapper">
-            <a style="text-decoration: none !important;" href="#section4" id="scrolldown"></a>
+            <a style="text-decoration: none !important; " href="#section4" id="scrolldown"></a>
         </div>
-
     </div>
-
 
     <div class="parallax2 d-flex p-2 justify-content-center " id="section2">
         <div style="color: white;" class="my-auto text-center w-100">
@@ -464,7 +446,7 @@
                 <section class="cards">
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/picme.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/picme.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -482,7 +464,7 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/helene.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/helene.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -501,7 +483,7 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/manos.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/manos.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -516,7 +498,7 @@
                     </div>
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/ana.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/ana.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -536,7 +518,7 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/nani.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/nani.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -553,7 +535,7 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/bhushan.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/bhushan.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -571,7 +553,7 @@
 
                     <div class="card">
                         <div class="card__image-container">
-                            <img class="img-fluid" src="./assets/yasmeen.jpg"
+                            <img class="img-fluid lazyimage" data-src="./assets/yasmeen.jpg"
                                 alt="Detailed image description would go here." />
                         </div>
                         <div class="card__content">
@@ -599,12 +581,15 @@
                 <h1 class="myheadingunderline"
                     style=" font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Previous Events</h1>
                 <div id="getataste">
-                    <section class=" mt-5">
+                    <section class="fromleft slidein mt-5">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-7">
                                     <div class="eventimg">
-                                        <img alt="Web Studio" class="img-fluid" src="./assets/event4.jpg" />
+                                        <a href="https://www.instagram.com/p/CGZ2RiTgiaU/" target="_blank">
+                                            <img style="cursor: pointer;" alt="Web Studio" class="img-fluid lazyimage"
+                                                data-src="./assets/event4.jpg" />
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-lg-3 ml-auto d-flex align-items-center mt-4 mt-md-0">
@@ -619,9 +604,7 @@
                     </section>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <section class=" mt-5">
+                    <section class="fromright slidein mt-5">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-3 col-lg-3 mr-auto d-flex align-items-center mt-4 mt-md-0">
@@ -634,7 +617,10 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="eventimg2">
-                                        <img alt="Web Studio" class="img-fluid" src="./assets/event2.jpg" />
+                                        <a href="https://www.instagram.com/p/CGZ2RiTgiaU/" target="_blank">
+                                            <img style="cursor: pointer;" alt="Web Studio" class="img-fluid lazyimage"
+                                                data-src="./assets/event2.jpg" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -644,130 +630,8 @@
 
                 <br>
                 <br>
-
             </div>
 
-
-            <!-- <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1473283147055-e39c51463929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1534143046043-44af3469836b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-container">
-                        <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
-                            alt="Detailed image description would go here." />
-                    </div>
-                    <div class="card__content">
-                        <p class="card__title text--medium">
-                            Here's the Title of an Awesome Course
-                        </p>
-                        <div class="card__info">
-                            <p class="text--medium">30 Min</p>
-                            <p class="card__price text--medium">Free</p>
-                        </div>
-                    </div>
-                </div> -->
             </section>
         </div>
         <br>
@@ -812,17 +676,14 @@
 
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
+
+
         <script>
             $(document).ready(function () {
                 $("a").on('click', function (event) {
@@ -866,6 +727,32 @@
 
             btnScroll.addEventListener("click", function () {
                 $("html, body").animate({ scrollTop: 0 }, "slow")
+            });
+
+            const mylazyload = new LazyLoad({
+                elements_selector: ".lazyimage"
+            });
+
+            const faders = document.querySelectorAll(".slidein");
+
+            const options = {
+                rootMargin: "0px 0px -600px 0px"
+            };
+
+            const appearOnSroll = new IntersectionObserver(function (entries, appearOnSroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add("appear");
+                        appearOnSroll.unobserve(entry.target);
+                    }
+                })
+            }, options);
+
+
+            faders.forEach(fader => {
+                appearOnSroll.observe(fader);
             })
         </script>
 </body>
