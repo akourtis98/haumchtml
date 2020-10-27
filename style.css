@@ -197,7 +197,8 @@ main {
 }
 
 .cards {
-  grid-column: 2 / span 12;
+  border: 2px solid blue;
+  grid-column: 2 / span 15;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
   grid-gap: 40px;
