@@ -13,10 +13,75 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;100&display=swap" rel="stylesheet">
 
     <title>Marketing Club HAU | Homepage </title>
     <style>
+        .behind {
+            background-image: url('./assets/event2.jpg');
+            background-size: 100%;
+            width: 100vw;
+            height: 100vh;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0 !important;
+
+            opacity: 0.6;
+        }
+
+        .parallax1 {
+            width: 100vw;
+            height: 100vh;
+            background-color: #272727;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            opacity: 0.4;
+        }
+
+        .parallax1tintlayer {
+            background: rgba(0, 0, 0, 0.8);
+            /*can be anything, of course*/
+            width: 100vw;
+            height: 100vh;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .ladningwrap h1,
+        p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .ladningwrap {
+            height: 100vh;
+            width: 100vw;
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .contactlist i {
+            font-size: 25px;
+        }
+
+        .contactlist a {
+            text-decoration: none !important;
+            color: black !important;
+        }
+
         .eventimg:hover {
             transform: translate(-7px, -7px);
             box-shadow: 0px 0px 20px 0px #888888;
@@ -66,18 +131,6 @@
             margin: 0 !important;
             overflow-x: hidden;
             background-color: #f3f3f3 !important;
-        }
-
-        .parallax1 {
-            background-image: url('./assets/landingpage.jpg');
-
-            width: 100vw;
-            height: 100vh;
-
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         .parallax2 {
@@ -383,16 +436,20 @@
 </head>
 
 <body>
-    <div class="parallax1" style="display: grid; place-items: center;">
-        <div style="color: black;" class="my-auto text-center w-100">
-            <h1 style="font-size: 4rem;
+    <div class="ladningwrap" style="display: grid; place-items: center;">
+        <div style="color: white;">
+            <h1 style="font-size: 6rem;
                     font-family: 'Oswald', sans-serif !important; font-weight: 600;">
-                MARKETING CLUB @ HAU
+                MARKETING CLUB
             </h1>
 
             <p style="font-size: 1.5rem;">
                 The most passionate student club of Hellenic American University
             </p>
+
+            <div class="parallax1tintlayer"></div>
+            <img class="behind" src="./assets/behind.jpg">
+            <img class="parallax1">
         </div>
     </div>
 
@@ -634,8 +691,7 @@
 
             </section>
         </div>
-        <br>
-        <span class="d-flex p-2 justify-content-center ">
+        <!-- <span class="d-flex p-2 justify-content-center ">
             <a class="joinbtn" href="file:///C:/Users/akour/Desktop/haumcsitehtml/join.html"
                 style="border-radius: 50px;
                                                 border: 3px solid black !important;
@@ -648,13 +704,86 @@
                                                 cursor: pointer;
                                                 text-decoration: none;
                                                 border-bottom-left-radius: 300px;  font-family: 'Oswald', sans-serif !important;  font-weight: 600;">Join Now</a>
-        </span>
+        </span> -->
+
         <br>
-        <br><br>
+        <div class="container myheadingunderline">
+            <h1><b>Find us</b></h1>
+            <p class="text-muted">We are located in the heart of Athens
+            </p>
+        </div>
+        <div class="card card-cascade narrower">
+            <div class="card-body card-body-cascade ">
+                <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 650px;">
+                    <iframe style="height: 100%; width: 100%;" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.246647173766!2d23.742601315323334!3d37.97137287972408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd418d35c5bb%3A0x7596ffdf579bad38!2sArrianou%2029%2C%20Athina%20116%2035!5e0!3m2!1sen!2sgr!4v1601901584508!5m2!1sen!2sgr"
+                        allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen" scrolling="auto"></iframe>
+                </div>
+            </div>
+        </div>
 
+        <br>
+        <div class="container myheadingunderline">
+            <h1><b>Contact us</b></h1>
+            <p class="text-muted">Send us a message stating why you would like to join and what do you expect to get out
+                of the club :)
+            </p>
+        </div>
+        <br>
+        <div id="contact" class="container contactlist">
+            <div class="row">
+                <div class="col-lg-5">
+                    <br>
+                    <br>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">CONTACT DETAILS</h6>
+                    <p>
+                        <i class="fa fa-home mr-3"></i> 17 Dongho-ro 34-gil, Jung-gu
+                        Seoul, South Korea</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> oshes.korea@gmail.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>+ 7 999 333-26-04</p>
 
+                    <br>
+                    <h6>FOLLOW US</h6>
+                    <br>
+                    <ul class="list-unstyled list-inline ">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/pg/oshescosmetic/"
+                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/oshes.korea/"
+                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form action="/action_page.php">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+                        <label for="subject"><b>Subject:</b></label>
+                        <input type="text" id="subject" name="subject" placeholder="Your subject..">
+                        <label for="phone"><b>Phone:</b></label>
+                        <input type="number" id="phone" name="phone" placeholder="Your phone..">
+                        <label for="content"><b>Message:</b></label>
+                        <textarea id="content" name="content" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                        <button class="btn btn-danger"
+                            style="background-color: #272727; border:#272727 !important; float:left; border-radius: 0px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <a id="btnScroll"></a>
-
+        <br>
+        <br>
         <footer class="font-small ">
             <div style="background-color:#ccc; padding: 1   0px;" id="socialmedialine">
                 <ul class="social-network social-circle text-center" style="display: table !important;
@@ -682,7 +811,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
-
 
         <script>
             $(document).ready(function () {

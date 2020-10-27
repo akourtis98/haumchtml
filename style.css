@@ -230,8 +230,10 @@ main {
 }
 .card__content p {
   color: black !important;
+  font-weight: 100 !important;
+  font-family: Helvetica !important;
 }
-.card__title {
+.card__title p {
   margin-bottom: 10px;
 }
 

@@ -5,3 +5,7 @@ todos
   - add local libraries
   - refactor code
   - make minified version
+  - make members quotes nicer
+  - make join now turn 360 animation
+  - event desc nicer design
+  - make site responsive
