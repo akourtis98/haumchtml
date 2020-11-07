@@ -9,3 +9,7 @@ todos
   - make join now turn 360 animation
   - event desc nicer design
   - make site responsive
+  - download fonts locally
+  - add language change
+  - add chat feature
+  - add whatsapp link or messenger link
