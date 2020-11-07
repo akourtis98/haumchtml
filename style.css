@@ -836,3 +836,28 @@ ul.social-network li {
   display: grid !important;
   place-items: center !important;
 }
+
+#events {
+  position: relative;
+  top: -100px;
+}
+
+#awards {
+  position: relative;
+  top: -100px;
+}
+
+#section4 {
+  position: relative;
+  top: -100px;
+}
+
+#findus {
+  position: relative;
+  top: -100px;
+}
+
+#contact {
+  position: relative;
+  top: -100px;
+}
