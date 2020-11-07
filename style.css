@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(./Oswald/Oswald-VariableFont_wght.ttf);
+}
+
 footer {
   background: #16222a;
   background: -webkit-linear-gradient(59deg, #16222a, #16222a);
@@ -350,36 +360,45 @@ h4 {
   background-image: url("./assets/landingwallpaper.jpg");
   background-size: 100%;
   width: 100vw;
-  height: 100vh;
-
+  height: 93vh;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 7%;
   padding: 0 !important;
 
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .parallax1 {
   width: 100vw;
-  height: 100vh;
+  height: 93vh;
   background-color: #272727;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 7%;
 
   opacity: 0.4;
 }
 
 .parallax1tintlayer {
-  background: rgba(0, 0, 0, 0.8);
-  /*can be anything, of course*/
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 93vh;
+
+  position: absolute;
+  left: 0;
+  top: 7%;
+}
+
+.parallax2tintlayer {
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.4);
   width: 100vw;
   height: 100vh;
 
   position: absolute;
   left: 0;
-  top: 0;
+  top: 100%;
 }
 
 .ladningwrap h1,
@@ -438,6 +457,10 @@ p {
   position: relative;
 }
 
+.myheadingunderline h1 {
+  font-family: "Oswald" !important;
+}
+
 .myheadingunderline h1:before {
   content: "";
   position: absolute;
@@ -473,7 +496,7 @@ h3,
 h2,
 h4,
 h5 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins" !important;
   font-weight: 600;
 }
 
@@ -524,16 +547,18 @@ h5 {
 }
 
 .eventdesc2 {
-  font-family: "Piazzolla", serif;
-  font-size: 30px;
+  font-family: "Oswald" !important;
+  font-size: 50px;
+  letter-spacing: 4px;
   line-height: 1.4;
   margin-left: 50px;
 }
 
 .eventdesc {
   margin-left: 40px;
-  font-family: "Piazzolla", serif;
-  font-size: 30px;
+  font-family: "Oswald" !important;
+  font-size: 50px;
+  letter-spacing: 4px;
   line-height: 1.4;
 }
 
@@ -572,6 +597,16 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+select {
+  background: url(./arrow.png) no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 97%;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 input[type="submit"] {
@@ -772,4 +807,32 @@ ul.social-network li {
 .contactlist ul li {
   list-style: bullet !important;
   display: list-item !important;
+}
+
+#headernav {
+  z-index: 99999999999999 !important;
+  position: fixed !important;
+  top: 0px;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 7% !important;
+}
+
+#headernav li a {
+  font-size: 25px;
+  font-family: "Oswald";
+  padding-left: 25px;
+  letter-spacing: 1px !important;
+}
+
+#headernav a img {
+  width: 160px;
+  padding: 0;
+  margin: 0;
+}
+
+#headernav .collapse.navbar-collapse {
+  display: grid !important;
+  place-items: center !important;
 }
