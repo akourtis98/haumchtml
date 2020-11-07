@@ -15,5 +15,3 @@ todos
 - add chat feature
 
 - add whatsapp link or messenger link
-
-- add nice moving header
