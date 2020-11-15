@@ -15,3 +15,9 @@ todos
 - add chat feature
 
 - add whatsapp link or messenger link
+
+- make collage of previous activities with image links etc
+
+- add upcoming events section
+
+- add haec and hau links etc

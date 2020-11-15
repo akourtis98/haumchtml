@@ -2,4 +2,4 @@ fixing site haumc:
 
 fix emojis
 
-
+make better text 
