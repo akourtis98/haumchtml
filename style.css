@@ -1012,10 +1012,10 @@ ul.social-network li {
     flex-basis: 32%;
   }
   .layout.layout--collage .image--3-of-5 {
-    flex-basis: 59%;
+    flex-basis: 50%;
   }
   .layout.layout--collage .image--2-of-5 {
-    flex-basis: 39%;
+    flex-basis: 40%;
     position: relative;
     overflow: hidden;
   }
