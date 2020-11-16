@@ -1054,3 +1054,19 @@ ul.social-network li {
 .navunderline:hover {
   border-bottom: 1px solid black;
 }
+
+.outer2 {
+  background: url("./assets/25457195.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.in2 {
+  background-color: hsla(0, 0%, 100%, 1);
+  height: 100%;
+  opacity: 0.75;
+  -webkit-transform: rotate(-80deg) translateY(-70%) translateX(0%);
+}
