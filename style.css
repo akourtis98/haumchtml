@@ -135,8 +135,8 @@ html {
   padding: 1.3rem !important;
 }
 
-.myheader {
-  background-color: #f9f9f9 !important;
+.description p {
+  text-align: center;
 }
 
 .footer-middle h4 {
