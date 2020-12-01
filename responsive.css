@@ -1,13 +1,16 @@
 @media only screen and (max-width: 1150px) {
   .logo {
+    padding-right: 0 !important;
     display: none;
+  }
+
+  .social-network {
+    float: left !important;
   }
 
   .icons ul {
     left: 0px !important;
     position: relative;
-    color: red !important;
-    float: left !important;
     margin-left: 0px !important;
   }
 
@@ -17,7 +20,86 @@
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 550px) {
+  .social-network {
+    width: 600px !important;
+  }
+  .social-network li a {
+    font-size: 23px !important;
+  }
+
+  .icon {
+    width: 41px !important;
+  }
+
+  .nav-item a {
+    font-size: 16px !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1200px) {
+  .textcontent p:first-child {
+    font-size: 35px !important;
+  }
+
+  .textcontent {
+    padding: 0px !important;
+  }
+
+  .textcontent p {
+    font-size: 21px !important;
+  }
+  .social-network li a {
+    font-size: 29px !important;
+  }
+
+  .icon {
+    width: 50px !important;
+  }
+
+  .nav-item a {
+    font-size: 14px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .social-network {
+    width: 600px !important;
+  }
+  .nav-item a {
+    font-size: 21px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .landingpagetext {
+    font-size: 7rem;
+  }
+}
+
 @media only screen and (max-width: 1150px) and (min-width: 550px) {
+  #content {
+    width: 90vw !important;
+  }
+  .textcontent {
+    padding: 0px !important;
+  }
+
+  .textcontent p:first-child {
+    font-size: 25px !important;
+  }
+
+  .textcontent p {
+    font-size: 16px !important;
+  }
+
+  .landingpagetext {
+    font-size: 6rem;
+  }
+
   .upcomingwrapper h7 {
     font-size: 15px !important;
   }
@@ -28,6 +110,25 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .textcontent p:first-child {
+    font-size: 20px !important;
+  }
+
+  #content {
+    width: 90vw !important;
+  }
+
+  .textcontent {
+    padding: 0px !important;
+  }
+
+  .textcontent p {
+    font-size: 14px !important;
+  }
+
+  .landingpagetext {
+    font-size: 3.5rem;
+  }
   .breakformobile {
     flex-basis: 100%;
   }
