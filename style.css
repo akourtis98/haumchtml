@@ -143,7 +143,7 @@ html {
   font-size: 3.1rem;
 }
 
-#section2 p {
+#whoweare p {
   margin: auto;
   font-size: 1.4rem;
   width: 63rem;
@@ -330,18 +330,23 @@ main {
 h4 {
   padding: 7px 0px 0px 0px;
 }
+.textcontent {
+  padding: 50px;
+}
+.textcontent p {
+  border: 1px solid red;
+  width: 100%;
+  font-size: 20px;
+  word-wrap: break-word !important;
+}
 
 .behind2 {
-  background-image: url("./assets/haumc.jpeg");
-  background-size: 100%;
+  background-image: url("./assets/bigimgs/haumc.jpeg");
+
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  padding: 0 !important;
-  filter: blur(1.5px);
-  opacity: 0.5;
+
+  position: relative;
 
   background-attachment: fixed;
   background-position: center;
@@ -349,22 +354,25 @@ h4 {
   background-size: cover;
 }
 
-.behind {
+.landingpage {
+  background-image: url("./assets/bigimgs/landingwallpaper.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-image: url("./assets/landingwallpaper.jpg");
-  background-size: 100%;
   width: 100vw;
   height: 91vh;
   position: absolute;
   left: 0;
   top: 9vh;
-  padding: 0 !important;
+}
 
-  opacity: 0.4;
+.landingpagetext {
+  font-size: 8rem;
+  font-weight: 900;
+  color: white;
+  font-family: "Oswald", sans-serif !important;
+  letter-spacing: 8px;
 }
 
 .parallax1 {
@@ -378,31 +386,13 @@ h4 {
   opacity: 0.4;
 }
 
-.parallax1tintlayer {
-  background: rgba(0, 0, 0, 0.9);
-  width: 100vw;
-  height: 91vh;
-
-  position: absolute;
-  left: 0;
-  top: 9vh;
+.ladningwrap p {
+  z-index: 1;
 }
 
-.parallax2tintlayer {
-  background: rgba(0, 0, 0, 0.7);
-  width: 100vw;
-  height: 100vh;
-
-  position: absolute;
-  left: 0;
-  top: 100%;
-}
-
-.ladningwrap h1,
-h2,
-p {
-  position: relative;
-  z-index: 2;
+.centerGrid {
+  place-items: center;
+  display: grid;
 }
 
 .ladningwrap {
@@ -489,22 +479,16 @@ body {
   opacity: 0.4;
 }
 
-.parallax2 {
+#whoweare {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  left: 0;
-  top: 100%;
+  color: white;
 }
 
-p,
-h1,
-h3,
-h2,
-h4,
-h5 {
-  font-family: "Poppins" !important;
-  font-weight: 600;
+.whoweareHeading {
+  font-size: 50px !important;
+  font-weight: 500;
+  text-align: center;
 }
 
 #btnScroll {
@@ -568,7 +552,7 @@ textarea {
 }
 
 select {
-  background: url(./arrow.png) no-repeat right;
+  background: url(./assets/inputs/arrow.png) no-repeat right;
   -webkit-appearance: none;
   background-position-x: 97%;
 }
@@ -920,6 +904,10 @@ ul.social-network li {
 .layout .image--5 {
   flex-basis: 100%;
 }
+
+.image {
+  margin-bottom: 100px !important;
+}
 .layout .image--2,
 .layout .image--3,
 .layout .image--3-of-5,
@@ -927,8 +915,8 @@ ul.social-network li {
   flex-basis: 100%;
   max-height: 500px;
 }
-.layout .description {
-  margin-bottom: 50px;
+.description {
+  margin-bottom: 50px !important;
 }
 .layout .description h1 {
   text-align: center;
@@ -1031,7 +1019,7 @@ ul.social-network li {
 }
 
 .outer2 {
-  background: url("./assets/25457195.jpg");
+  background: url("./assets/events/25457195.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -1040,6 +1028,10 @@ ul.social-network li {
 
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto !important;
+  margin: auto !important;
   overflow: hidden;
 }
 
@@ -1057,4 +1049,11 @@ ul.social-network li {
 
 .featurette-heading {
   color: #31404f;
+}
+
+.whatwedoimg {
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto !important;
+  margin: auto !important;
 }
