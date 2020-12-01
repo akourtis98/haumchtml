@@ -851,6 +851,11 @@ ul.social-network li {
   font-size: 3.8rem;
 }
 
+.upcomingwrapper {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .smallfont {
   margin: auto;
   font-size: 1.3rem;
@@ -905,9 +910,6 @@ ul.social-network li {
   flex-basis: 100%;
 }
 
-.image {
-  margin-bottom: 100px !important;
-}
 .layout .image--2,
 .layout .image--3,
 .layout .image--3-of-5,
