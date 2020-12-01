@@ -781,20 +781,6 @@ ul.social-network li {
   display: list-item !important;
 }
 
-#headernav {
-  z-index: 99999999999999 !important;
-  position: fixed !important;
-  top: 0px;
-  width: 100%;
-  height: 10% !important;
-}
-
-#headernav .mr-auto li a {
-  font-size: 25px;
-  font-family: "Oswald";
-  padding-left: 25px;
-}
-
 .logobrand {
   width: 160px;
   padding: 0;
@@ -806,12 +792,6 @@ ul.social-network li {
 .collapse,
 .navbar {
   width: 100%;
-  height: 9vh;
-}
-
-#headernav .collapse.navbar-collapse {
-  display: grid !important;
-  place-items: center !important;
 }
 
 #events {
@@ -873,6 +853,9 @@ ul.social-network li {
 }
 
 .upcomingwrapper {
+  width: 95vw;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -1028,6 +1011,7 @@ ul.social-network li {
 .navunderline {
   width: 100%;
   height: 100%;
+  background-color: white;
   transition: all 0.5s ease 0s;
   color: #31404f !important;
   padding-left: 0px !important;
@@ -1079,4 +1063,47 @@ ul.social-network li {
   max-height: 100vh;
   width: auto !important;
   margin: auto !important;
+}
+
+/* header starts here */
+#navbarSupportedContent,
+.navbar,
+#headernav,
+.collapse,
+.navbar-collapse {
+  background-color: white !important;
+  width: 100% !important;
+}
+
+#headernav {
+  z-index: 9999 !important;
+  position: fixed !important;
+  height: 7vh !important;
+  width: 100%;
+}
+
+#headernav li a {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+#headernav {
+  z-index: 9999 !important;
+  position: fixed !important;
+  height: 7vh !important;
+  width: 100%;
+}
+
+#headernav li a {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.nav-item {
+  height: 100%;
+  padding-right: 20px;
+}
+
+.logo {
+  display: block;
 }
