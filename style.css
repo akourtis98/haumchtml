@@ -346,6 +346,19 @@ h4 {
   font-size: 25px !important;
 }
 
+.behind3 {
+  background-image: url("./assets/bigimgs/welikeyoutoo.jpg");
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .behind2 {
   background-image: url("./assets/bigimgs/haumc.jpeg");
 
@@ -846,7 +859,7 @@ input[type="submit"]:hover {
 }
 
 .upcomingwrapper {
-  width: 1000px;
+  width: 100%;
   margin: auto auto 20px auto;
 }
 
@@ -1080,4 +1093,21 @@ input[type="submit"]:hover {
 p span {
   color: white;
   text-shadow: 0 2px 2.896px #c4b59d, 0 -2px 1px #fff;
+}
+
+.jumbotron {
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+#bigTextFont {
+  font-size: 70px !important;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
