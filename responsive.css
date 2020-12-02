@@ -118,6 +118,20 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .outer2 h1 {
+    text-align: left !important;
+    width: 50vw !important;
+    font-weight: 500 !important;
+    font-size: 30px;
+  }
+
+  .outer2 p {
+    text-align: left !important;
+    width: 50vw !important;
+    font-weight: 500 !important;
+    font-size: 24px;
+  }
+
   .textcontent p:first-child {
     font-size: 20px !important;
   }
