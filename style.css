@@ -1082,6 +1082,7 @@ input[type="submit"]:hover {
 
 #headernav li a {
   font-size: 25px;
+  z-index: 0 !important;
   font-family: sans-serif;
 }
 
