@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1150px) {
+  #scrolldown {
+    right: -10px !important;
+  }
+
   .logo {
     padding-right: 0 !important;
     display: none;
@@ -100,12 +104,16 @@
     font-size: 6rem;
   }
 
-  .upcomingwrapper h7 {
-    font-size: 15px !important;
+  .upcomingwrapper {
+    width: 750px;
+  }
+
+  .smallfont {
+    font-size: 0.8rem !important;
   }
 
   .bigfont {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 }
 
@@ -135,6 +143,10 @@
 
   .description {
     padding-bottom: 100px;
+  }
+
+  .upcomingwrapper {
+    width: 360px;
   }
 
   .upcomingwrapper h7 {

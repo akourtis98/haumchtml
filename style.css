@@ -333,6 +333,7 @@ h4 {
 .textcontent p:first-child {
   font-size: 50px !important;
   font-weight: 600;
+  letter-spacing: -2px !important;
 }
 
 #content {
@@ -375,7 +376,8 @@ h4 {
 .landingpagetext {
   padding: 30px;
   text-align: center;
-  font-size: 8rem;
+  font-size: 9rem;
+  letter-spacing: -2px;
   font-weight: 900;
   color: white;
   font-family: "Oswald", sans-serif !important;
@@ -840,20 +842,17 @@ input[type="submit"]:hover {
 }
 
 .bigfont {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
 }
 
 .upcomingwrapper {
-  width: 95vw;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  width: 1000px;
+  margin: auto auto 20px auto;
 }
 
 .smallfont {
   margin: auto;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 * {
@@ -1002,7 +1001,7 @@ input[type="submit"]:hover {
 }
 
 .outer2 {
-  background: url("./assets/events/25457195.jpg");
+  background: url("./assets/events/25457195 (2).jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -1076,4 +1075,9 @@ input[type="submit"]:hover {
 
 .social-network {
   float: right;
+}
+
+p span {
+  color: white;
+  text-shadow: 0 2px 2.896px #c4b59d, 0 -2px 1px #fff;
 }
