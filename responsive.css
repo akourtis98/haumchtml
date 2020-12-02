@@ -157,6 +157,7 @@
   .landingpagetext {
     font-size: 3.5rem;
   }
+
   .breakformobile {
     flex-basis: 100%;
   }
@@ -166,7 +167,7 @@
   }
 
   .upcomingwrapper {
-    width: 360px;
+    width: 300px;
   }
 
   .upcomingwrapper h7 {
@@ -175,5 +176,9 @@
 
   .bigfont {
     font-size: 3.4rem;
+  }
+
+  .display-2 {
+    font-size: 50px !important;
   }
 }
