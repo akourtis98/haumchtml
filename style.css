@@ -346,6 +346,20 @@ h4 {
   font-size: 25px !important;
 }
 
+.behind5 {
+  background-image: url("./assets/bigimgs/teamwork.jpg");
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .behind3 {
   background-image: url("./assets/bigimgs/welikeyoutoo.jpg");
 
@@ -359,8 +373,23 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.behind4 {
+  background-image: url("./assets/bigimgs/preview.jpg");
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .behind2 {
-  background-image: url("./assets/bigimgs/haumc.jpeg");
+  background-image: url("./assets/bigimgs/haumc2.jpeg");
 
   width: 100vw;
   height: 100vh;
@@ -387,10 +416,9 @@ h4 {
 }
 
 .landingpagetext {
-  padding: 30px;
   text-align: center;
-  font-size: 9rem;
-  letter-spacing: -2px;
+  font-size: 7rem;
+  letter-spacing: -2px !important;
   font-weight: 900;
   color: white;
   font-family: "Oswald", sans-serif !important;
@@ -422,7 +450,7 @@ h4 {
   width: 100vw;
 
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -440,27 +468,6 @@ h4 {
   color: black !important;
 }
 
-.eventimg:hover {
-  transform: translate(-7px, -7px);
-  box-shadow: 0px 0px 20px 0px #888888;
-}
-
-.eventimg2:hover {
-  transform: translate(7px, -7px);
-  box-shadow: 0px 0px 20px 0px #888888;
-}
-
-.eventimg2 {
-  transition: all 0.3s ease 0s;
-  width: 1100px;
-  margin-right: 200px;
-}
-
-.eventimg {
-  transition: all 0.3s ease 0s;
-  width: 1100px;
-  margin-left: 200px;
-}
 .myheadingunderline {
   text-align: center;
   padding-left: 20px !important;
@@ -797,6 +804,7 @@ input[type="submit"]:hover {
 .navbar-nav,
 .collapse,
 .navbar {
+  padding: 0 !important;
   width: 100%;
 }
 
@@ -1081,9 +1089,8 @@ input[type="submit"]:hover {
 }
 
 .nav-item {
-  height: 100%;
+  height: 50px;
   padding-right: 20px;
-  font-family: "Lato", sans-serif !important;
 }
 
 .social-network {
@@ -1096,10 +1103,7 @@ p span {
 }
 
 .jumbotron {
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 10px !important;
 }
 
 html {
