@@ -7,25 +7,39 @@
   font-family: Oswald;
   src: url(./Oswald/Oswald-VariableFont_wght.ttf);
 }
-
-footer {
-  background: #16222a;
-  background: -webkit-linear-gradient(59deg, #16222a, #16222a);
-  background: linear-gradient(59deg, #16222a, #16222a);
+/* footer starts here */
+.footer {
+  background: #152f4f;
   color: white;
 }
 
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
+.footer .links li a {
+  color: white;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
-
-footer a:hover {
-  color: #fa944b;
+.footer .links li a:hover {
   text-decoration: none;
+  color: #4180cb;
 }
-
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* footer ends here */
 .copy {
   font-size: 12px;
   padding: 10px;
