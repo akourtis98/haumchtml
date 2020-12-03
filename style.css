@@ -360,6 +360,20 @@ h4 {
   font-size: 25px !important;
 }
 
+.behind5 {
+  background-image: url("./assets/bigimgs/teamwork.jpg");
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .behind6 {
   background-image: url("./assets/bigimgs/joinus.png");
 
