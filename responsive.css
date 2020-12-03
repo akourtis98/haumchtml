@@ -82,7 +82,7 @@
   }
 }
 
-@media only screen and (max-width: 1150px) and (min-width: 550px) {
+@media only screen and (max-width: 1150px) and (min-width: 551px) {
   #content {
     width: 90vw !important;
   }
@@ -164,7 +164,7 @@
   }
 
   .landingpagetext {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   .breakformobile {
