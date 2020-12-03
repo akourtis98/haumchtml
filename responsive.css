@@ -121,6 +121,12 @@
   }
 }
 
+@media only screen and (max-width: 850px) {
+  .social-network {
+    z-index: -123;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   div .joinusthingy h1,
   div .joinusthingy p {
