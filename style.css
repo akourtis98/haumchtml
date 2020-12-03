@@ -891,11 +891,6 @@ input[type="submit"]:hover {
   top: -100px;
 }
 
-.textshadow {
-  color: #202c2d;
-  text-shadow: 0 1px #808d91, -1px 0 #cdd2d5, -1px 2px #808d91, -2px 1px #cdd2d5;
-}
-
 .box4 {
   background-color: #31404f;
   width: 100px;
@@ -1159,9 +1154,9 @@ input[type="submit"]:hover {
   float: right;
 }
 
-p span {
+#home p span {
   color: white;
-  text-shadow: 0 2px 2.896px #c4b59d, 0 -2px 1px #fff;
+  text-shadow: 0 1px 1.896px #c4b59d, 0 -2px 1px #fff;
 }
 
 .jumbotron {
