@@ -45,12 +45,12 @@
             </button>
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse" style="padding: 0 !important;">
-                <a href="./index.html" class="logo"
-                    style="margin-left: 150px; padding: 0 !important; margin-right: 100px ;float: left !important; margin-top: 0vh; z-index: 999999999999999999999;">
-                    <img src="./assets/logos/logo.png" style="width: 80px; border-radius: 50%; cursor: pointer; "
+                <a href="./index.html" class="logo" style="margin-left: 150px; padding: 0 !important; margin-right: 60px ;float: left !important; 
+                    z-index: 999999999999999999999;">
+                    <img src="./assets/logos/logo.png" style="width: 65px; border-radius: 50%; cursor: pointer; "
                         alt="">
                 </a>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" style="margin-top: 5px;">
                     <li class="nav-item">
                         <a data-target=".navbar-collapse" class="nav-link navunderline textcolor" href="#home">
                             Home</a>
@@ -87,10 +87,10 @@
                             href="#contact">Contact</a>
                     </li>
 
-                    <li class="nav-item dropdown " style="cursor: pointer; z-index: 101239 !important;">
+                    <li class="nav-item dropdown" style="cursor: pointer; z-index: 101239 !important;">
                         <a class="nav-link textcolor" class="dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">&darr; ENG</a>
-                        <div class="dropdown-menu " aria-labelledby="dropdown09">
+                        <div class="dropdown-menu" aria-labelledby="dropdown09">
                             <a href="./gr/index.html" class="dropdown-item">GR</a>
                             <a href="./es/index.html" class="dropdown-item">ES</a>
                         </div>
@@ -99,11 +99,11 @@
 
                 <ul class="social-network social-circle" style=" width: 200px; padding-top: 13px !important">
                     <li><a target="_blank" href="https://www.facebook.com/haumarketingclub/" class="icon icoFacebook"
-                            title="Facebook"><i class="fa fa-facebook"></i></a>
+                            title="Facebook"><i class="fa fa-facebook textcolor"></i></a>
                     </li>
 
                     <li><a target="_blank" href="https://www.instagram.com/marketingclubhau/" class="icon icoInstagram"
-                            title="Instagram"><i class="fa fa-instagram"></i></a>
+                            title="Instagram"><i class="fa fa-instagram textcolor"></i></a>
                     </li>
                 </ul>
             </div>
@@ -937,11 +937,27 @@
                     scrolldown.style.opacity = '0';
                     navbarSupportedContent.style.cssText = 'background-color: white !important;';
                     $('.textcolor').attr('style', 'color: #31404f !important');
+                    $('.textcolor').hover(
+                        function () {
+                            $(this).attr('style', 'border-bottom: 1px solid black !important; color: #31404f !important');
+                        },
+                        function () {
+                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: #31404f !important');
+                        }
+                    );
                 } else {
                     scrolldown.style.visibility = 'visible';
                     scrolldown.style.opacity = '1';
                     navbarSupportedContent.style.cssText = 'background-color: transparent !important;';
-                    $('.textcolor').attr('style', 'color: white !important');
+                    $('.textcolor').attr('style', 'color: white !important;');
+                    $('.textcolor').hover(
+                        function () {
+                            $(this).attr('style', 'border-bottom: 1px solid white !important; color: white !important');
+                        },
+                        function () {
+                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important');
+                        }
+                    );
                 }
             }
 
