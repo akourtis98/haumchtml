@@ -601,7 +601,7 @@ textarea {
 }
 
 select {
-  background: url(./assets/inputs/arrow.png) no-repeat right;
+  background: url(./assets/other/arrow.png) no-repeat right;
   -webkit-appearance: none;
   background-position-x: 97%;
 }
