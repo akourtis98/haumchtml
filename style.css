@@ -417,6 +417,7 @@ h4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1107,4 +1108,8 @@ html {
 
 .dropdown-menu a {
   transition: 0.3s ease-in-out;
+}
+
+.lead {
+  font-size: 30px !important;
 }
