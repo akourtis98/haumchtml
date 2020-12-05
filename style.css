@@ -140,10 +140,6 @@ html {
   margin: 0;
 }
 
-#navbarSupportedContent {
-  height: 90px !important;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
