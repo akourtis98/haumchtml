@@ -1,4 +1,23 @@
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 980px) {
+  #navbarSupportedContent,
+  .collapse,
+  .navbar-nav,
+  .navbar-collapse {
+    background-color: white !important;
+  }
+
+  .navbar-toggler-icon,
+  .navbar-light .navbar-toggler {
+    border-color: white !important;
+    background-color: white !important;
+    color: white !important;
+  }
+
+  .nav-item a {
+    color: black !important;
+    padding: 10px !important;
+  }
+
   .navbar {
     padding: 20px !important;
   }
@@ -112,12 +131,6 @@
 
   .bigfont {
     font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .social-network {
-    z-index: -123;
   }
 }
 
