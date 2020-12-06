@@ -1109,3 +1109,7 @@ html {
 .lead {
   font-size: 30px !important;
 }
+
+.nav-item a {
+  font-size: 25px !important;
+}
