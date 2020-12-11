@@ -7,6 +7,7 @@
   font-family: Oswald;
   src: url(./Oswald/Oswald-VariableFont_wght.ttf);
 }
+
 /* footer starts here */
 .footer {
   background: #152f4f;
@@ -119,6 +120,10 @@ li {
 
 html {
   scroll-behavior: smooth;
+}
+
+.image--3 img {
+  height: 100% !important;
 }
 
 .description p {
@@ -406,18 +411,19 @@ h4 {
   background-image: url("./assets/bigimgs/haumc2.jpeg");
 
   width: 100vw;
-  height: 100vh;
+  height: 100vh !important;
 
   position: relative;
 
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
+  overflow-y: scroll !important;
 }
 
 .landingpage {
@@ -432,7 +438,11 @@ h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 100vh !important;
+
+  max-height: 100vh;
+  overflow-y: scroll;
+
   position: absolute;
   left: 0;
   top: 0;
@@ -926,9 +936,7 @@ input[type="submit"]:hover {
   flex-basis: 100%;
   max-height: 500px;
 }
-.description {
-  margin-bottom: 40px !important;
-}
+
 .layout .description h1 {
   text-align: center;
 }
@@ -956,7 +964,7 @@ input[type="submit"]:hover {
   .layout.layout--collage .description {
     -webkit-transition: bottom 0.6s ease-in-out;
     transition: bottom 0.6s ease-in-out;
-    padding: 5px 0 20px 0;
+    padding: 5px 0 0px 0;
     margin: 0;
     position: absolute;
     width: 100%;
