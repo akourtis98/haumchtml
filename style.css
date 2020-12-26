@@ -360,7 +360,7 @@ h4 {
   background-image: url("./assets/bigimgs/joinus.png");
 
   width: 100vw;
-  height: 100vh;
+  height: 45vh;
 
   position: relative;
 
@@ -1084,7 +1084,7 @@ input[type="submit"]:hover {
 
 .nav-item {
   height: 50px;
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 
 .social-network {
@@ -1110,9 +1110,10 @@ html {
 .textcolor:hover {
   border-bottom: 1px solid white;
 }
+
 .textcolor {
   transition: 0.3s ease-in-out;
-  color: white !important;
+  color: white !important ;
 }
 
 .dropdown-menu a {
@@ -1124,5 +1125,9 @@ html {
 }
 
 .nav-item a {
-  font-size: 25px !important;
+  font-size: 26px !important;
+}
+
+#navbarSupportedContent {
+  padding: 5px !important;
 }

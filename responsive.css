@@ -60,17 +60,12 @@
     font-size: 16px !important;
     margin: 0 !important;
     white-space: nowrap !important;
-    padding: 0 !important;
   }
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 1200px) {
   .textcontent p:first-child {
     font-size: 35px !important;
-  }
-
-  .textcontent {
-    padding: 0px !important;
   }
 
   .textcontent p {
@@ -104,9 +99,6 @@
 @media only screen and (max-width: 1150px) and (min-width: 551px) {
   #content {
     width: 90vw !important;
-  }
-  .textcontent {
-    padding: 0px !important;
   }
 
   .textcontent p:first-child {
@@ -166,10 +158,6 @@
 
   #content {
     width: 90vw !important;
-  }
-
-  .textcontent {
-    padding: 0px !important;
   }
 
   .textcontent p {
