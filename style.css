@@ -451,7 +451,6 @@ h4 {
 .landingpagetext {
   text-align: center;
   font-size: 8.5rem;
-  margin-top: 150px;
   letter-spacing: -2px !important;
   font-weight: 900;
   color: white;
@@ -469,11 +468,8 @@ h4 {
 }
 
 .ladningwrap {
-  height: 100vh;
-  width: 100vw;
-
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
