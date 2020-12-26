@@ -1,4 +1,9 @@
 @media only screen and (max-width: 980px) {
+  .navbar-nav {
+    display: flex !important;
+    text-align: left !important;
+  }
+
   #navbarSupportedContent,
   .collapse,
   .navbar-nav,
@@ -92,7 +97,7 @@
   }
 
   .landingpagetext {
-    font-size: 7rem;
+    font-size: 3rem;
   }
 }
 
@@ -110,7 +115,7 @@
   }
 
   .landingpagetext {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .upcomingwrapper {
@@ -165,7 +170,7 @@
   }
 
   .landingpagetext {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .breakformobile {
@@ -173,7 +178,7 @@
   }
 
   .description {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .upcomingwrapper {
