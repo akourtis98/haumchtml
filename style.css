@@ -316,12 +316,6 @@ h4 {
   padding: 50px;
 }
 
-.textcontent p:first-child {
-  font-size: 50px !important;
-  font-weight: 600;
-  letter-spacing: -2px !important;
-}
-
 #content {
   width: 60vw !important;
   margin: auto;
@@ -329,7 +323,7 @@ h4 {
 
 .textcontent p {
   width: auto !important;
-  font-size: 25px !important;
+  font-size: 21px !important;
 }
 
 .behind5 {
@@ -778,7 +772,7 @@ input[type="submit"]:hover {
 }
 
 .contactlist p {
-  font-weight: 100 !important;
+  font-weight: 400 !important;
 }
 
 .contactlist ul li {
@@ -1067,6 +1061,7 @@ input[type="submit"]:hover {
 }
 
 .nav-item {
+  transition: 5s ease-in-out !important;
   height: 50px;
   padding-right: 20px !important;
 }
@@ -1084,7 +1079,7 @@ html {
 }
 
 #bigTextFont {
-  font-size: 60px !important;
+  font-size: 50px !important;
   font-weight: 600;
   letter-spacing: 4px;
 }
@@ -1107,7 +1102,7 @@ html {
 }
 
 .nav-item a {
-  font-size: 26px !important;
+  font-size: 21px !important;
 }
 
 #navbarSupportedContent {
@@ -1117,4 +1112,9 @@ html {
 .navbar-nav {
   text-align: center !important;
   display: block !important;
+}
+
+.myinput {
+  margin-top: -4px !important;
+  margin-bottom: 12px !important;
 }

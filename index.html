@@ -109,26 +109,20 @@
         <img class="landingpage">
     </div>
 
-    <!-- <div class="centerGrid">
-        <div class="scroll">
-            <a style="text-decoration: none !important; margin: auto;" href="#whoweare" id="scrolldown"></a>
-        </div>
-    </div> -->
-
     <div class="behind2 centerGrid" id="whoweare">
         <div id="content">
             <div class="textcontent" style="text-align: center;">
-                <p id="bigTextFont">
+                <p class="textcontent" id="bigTextFont">
                     WHO WE ARE
                 </p>
 
-                <p class="text-justify" style="font-size: 1.4rem;">
+                <p class="text-justify">
                     The Hellenic American University Marketing Club is a team of motivated students that seek to build a
                     forum that connects
                     motivated students who share a passion for Business.
                 </p>
                 <br />
-                <p class="text-justify" style="font-size: 1.4rem;">
+                <p class="text-justify">
                     Our objective is the the cultivation of an inclusive and safe space for all. This encourages
                     co-operation, and in the
                     context of today's competitive ecosystem of Business, that is key for succes. Therefore, our club is
@@ -140,14 +134,14 @@
 
                 <br />
 
-                <p class="text-justify" style="font-size: 1.4rem;">
+                <p class="text-justify">
                     To achieve our goal, we incorporate experiential learning through group activities, trips, game
                     nights,
                     meet-ups, talks, projects, participating in competitions, and much more!
 
                 </p>
                 <br />
-                <p class="text-justify" style="font-size: 1.4rem;">
+                <p class="text-justify">
                     If you become part of us, you will enhance skills such as teamwork, communication, marketing, soft
                     skills,
                     leadership,
@@ -155,7 +149,7 @@
                 </p>
                 <br />
 
-                <p class="text-justify" style="font-size: 1.4rem;">
+                <p class="text-justify">
                     Join us today to become part of our vision for a top leading business club!
                 </p>
             </div>
@@ -286,7 +280,7 @@
     </div>
 
     <br>
-    <!-- 
+
     <div class="behind6 centerGrid" id="whatwedo" style="color: white !important;">
         <div id="content">
             <div class="textcontent" style="text-align: center; ;">
@@ -330,49 +324,15 @@
             </div>
         </div>
     </div>
-    <br> -->
+    <br>
 
-    <!-- <div class="behind6 centerGrid" id="whatwedo" style="color: white !important;">
-        <div class="textcontent" style="text-align: center; ">
-            <p id="bigTextFont">WHO CAN JOIN</p>
-        </div>
-    </div>
-    <br><br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Undergradue Students</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                    euismod. Donec sed odio dui. </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Postgraduate students</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                    euismod. Donec sed odio dui. </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Non Degree Seeking students</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                    ut
-                    fermentum massa justo sit amet risus.</p>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="jumbotron " style="background-color: white;">
+    <div class="jumbotron " style="background-color: white;">
         <div class="container joinusthingy">
             <h1 class="display-3">Join us :)</h1>
             <br>
             <p><a class="btn btn-primary btn-lg" href="#contact" role="button">Yes, I would love to join</a></p>
         </div>
-    </div> -->
-
+    </div>
 
 
     <div id="meettheteam" style="position: relative; top: -75px;"></div>
@@ -777,20 +737,18 @@
             </div>
             <div class="col-lg-7">
                 <form method="post" action="./mail.php">
-                    <label style="width: 70px;" for="firstname"><b>Firstname:</b></label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
+                    <label style="width: 100px;" for="fullname"><b>Full name:</b></label>
+                    <input class="myinput" type="text" id="fullname" name="fullname"
+                        placeholder="Your first and last name...">
                     <br>
-                    <label style="width: 70px;" for="lastname"><b>Last name:</b></label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+                    <label style="width: 100px;" for="email"><b>Email:</b></label>
+                    <input class="myinput" type="email" id="email" name="email" placeholder="Your email...">
                     <br>
-                    <label style="width: 70px;" for="email"><b>Email:</b></label>
-                    <input type="email" id="email" name="email" placeholder="Your email..">
+                    <label style="width: 100px;" for="subject"><b>Subject:</b></label>
+                    <input class="myinput" type="text" id="subject" name="subject" placeholder="Your subject...">
                     <br>
-                    <label style="width: 70px;" for="subject"><b>Subject:</b></label>
-                    <input type="text" id="subject" name="subject" placeholder="Your subject..">
-                    <br>
-                    <label style="width: 70px;" for="programme"><b>Program:</b></label>
-                    <select name="programme" id="programme" placeholder="Your programme..">
+                    <label style="width: 100px;" for="programme"><b>Program:</b></label>
+                    <select name="programme" id="programme" placeholder="Your programme of study...">
                         <option value="" disabled selected>Select your program of studies</option>
                         <option value="BSc IT">BSc IT</option>
                         <option value="MSc Sales">MSc Sales</option>
@@ -810,11 +768,11 @@
     <a id="btnScroll"></a>
     <br>
     <br>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row centerflex" style="height: 250px;">
             <img src="./assets/logos/logo.png" style="width: 200px; border-radius: 100px; cursor: pointer;" alt="">
         </div>
-    </div>
+    </div> -->
 
     <div class="pt-5 pb-3 footer">
         <div class="container">
@@ -862,7 +820,7 @@
     <script>
 
         $(document).ready(function () {
-            $("#btnScroll").on('click', function (event) {
+            $(".nav-item a").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
 
@@ -878,12 +836,11 @@
             });
 
             const btnScroll = document.querySelector("#btnScroll");
-            const scrolldown = document.querySelector("#scrolldown");
 
             const navbarSupportedContent = document.querySelector("#navbarSupportedContent");
 
             console.log($(window).height());
-            window.onscroll = function () { scrollFunction() };
+            window.onscroll = function () {scrollFunction()};
 
             function scrollFunction() {
                 if (document.documentElement.scrollTop > 1800) {
@@ -921,7 +878,7 @@
             }
 
             btnScroll.addEventListener("click", function () {
-                $("html, body").animate({ scrollTop: 0 }, "slow")
+                $("html, body").animate({scrollTop: 0}, "slow")
             });
         });
     </script>
