@@ -197,3 +197,124 @@
     font-size: 50px !important  ;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media (min-width: 500px) {
+  #btnScroll {
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, 20px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .toggle-bar {
+    display: inline-block;
+  }
+
+  .layout.layout--collage .image {
+    position: relative;
+    overflow: hidden;
+  }
+  .layout.layout--collage .image:hover .description {
+    bottom: 0;
+  }
+  .layout.layout--collage .description {
+    -webkit-transition: bottom 0.6s ease-in-out;
+    transition: bottom 0.6s ease-in-out;
+    padding: 5px 0 0px 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    bottom: -100%;
+    left: 0;
+    background-color: #fff;
+    color: #2d2d2d;
+    opacity: 0.8;
+  }
+  .layout.layout--collage .description h1 {
+    font-size: 24px;
+  }
+  .layout.layout--collage .description p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .layout.layout--collage .image--5 {
+    flex-basis: 100%;
+  }
+
+  .layout.layout--collage .image--2 {
+    flex-basis: 49%;
+  }
+  .layout.layout--collage .image--3 {
+    flex-basis: 32%;
+  }
+  .layout.layout--collage .image--3-of-5 {
+    flex-basis: 50%;
+  }
+  .layout.layout--collage .image--2-of-5 {
+    flex-basis: 40%;
+    position: relative;
+    overflow: hidden;
+  }
+  .layout.layout--collage .image--2-of-5 img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+  }
+}

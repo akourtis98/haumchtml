@@ -15,7 +15,6 @@
 
     <!-- fonts start  -->
     <link href="./Poppins/Poppins-Black.ttf" rel="stylesheet">
-    <!-- <link href="./materialicons.css" rel="stylesheet"> -->
     <link href="./Oswald/Oswald-VariableFont_wght.ttf" rel="stylesheet">
     <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -46,11 +45,11 @@
             </button>
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <!-- <a href="./index.html" class="logo" style="margin-left: 150px;  margin-right: 10px ;float: left !important; 
+                <a href="./index.html" class="logo" style="position: fixed; margin-left: 150px; margin-right: 10px; margin-top: 20px; float: left !important; 
                     z-index: 999999999999999999999;">
-                    <img src="./assets/logos/logo.png" style="width: 75px; border-radius: 50%; cursor: pointer; "
+                    <img src="./assets/logos/logo.png" style="width: 80px; border-radius: 50%; cursor: pointer; "
                         alt="">
-                </a> -->
+                </a>
                 <ul class="navbar-nav" style="margin-top: -1px; padding-top: 10px !important;">
                     <li class="nav-item">
                         <a data-target=".navbar-collapse" class="nav-link navunderline textcolor" href="#home">
@@ -103,14 +102,20 @@
     </header>
 
     <div id="home" class="ladningwrap centerGrid">
-        <p class="landingpagetext">
+        <p class="landingpagetext" style="text-align: center;
+  font-size: 5.5rem;
+  letter-spacing: -2px !important;
+  font-weight: 700;
+  color: white;
+  z-index: 1">
             HAU MARKETING CLUB
         </p>
         <img class="landingpage">
     </div>
 
     <div class="behind2 centerGrid" id="whoweare">
-        <div id="content">
+        <div style="width: 60vw !important;
+  margin: auto;">
             <div class="textcontent" style="text-align: center;">
                 <p class="textcontent" id="bigTextFont">
                     WHO WE ARE
@@ -157,7 +162,7 @@
     </div>
 
     <div class="behind3 centerGrid" id="whatwedo" style="color: white !important;">
-        <div id="content">
+        <div>
             <div class="textcontent" style="text-align: center; ;">
                 <h1 id="bigTextFont">What we do and how you benefit</h1>
             </div>
@@ -213,8 +218,9 @@
         <div class="container joinusthingy">
             <h1 class="display-3">Join us :)</h1>
             <br>
-            <p class="nav-item"><a class="btn btn-primary btn-lg" href="#contact" role="button">Yes, I would love to
-                    join</a></p>
+            <p class="nav-item"><button class="btn btn-primary joinbtn btn-lg" href="#contact" role="button">Yes, I
+                    would love to
+                    join</button></p>
         </div>
     </div>
 
@@ -336,36 +342,12 @@
         </div>
     </div>
 
-    <!-- <br><br>
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-6 order-md-2">
-                <br>
-                <br>
-                <h2> <span class="text-muted">A few words from our </span><span class="featurette-heading">
-                        advisor.</span>
-                </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod
-                    cursus
-                    commodo.</p>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod
-                    commodo.</p>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <img src="./assets/people/damian.jpg" alt="" class="whatwedoimg" style="width: 700px">
-                <p class="text-muted" style="margin: 0 !important;"><i>Damianos Giannakis, PhD, Marketer</i></p>
-            </div>
-        </div>
-    </div> -->
-
-    <br><br>
+    <br>
 
     <div id="events"></div>
     <br>
     <div class="container myheadingunderline">
-        <h1><b>Upcoming</b> Events</h1>
+        <h1>Upcoming Events</h1>
         <p class="text-muted">Our upcoming activities. Stay tuned. </p>
     </div>
 
@@ -420,7 +402,7 @@
 
     <br>
     <div class="container myheadingunderline">
-        <h1><b>Previous</b> Events</h1>
+        <h1>Previous Events</h1>
         <p class="text-muted">Some of our most recent activities</p>
     </div>
 
@@ -673,13 +655,6 @@
     </div>
     <a id="btnScroll"></a>
     <br>
-    <br>
-    <!-- <div class="container-fluid">
-        <div class="row centerflex" style="height: 250px;">
-            <img src="./assets/logos/logo.png" style="width: 200px; border-radius: 100px; cursor: pointer;" alt="">
-        </div>
-    </div> -->
-
     <div class="pt-5 pb-3 footer">
         <div class="container">
             <div class="row">
@@ -726,6 +701,11 @@
     <script>
 
         $(document).ready(function () {
+            const navbarSupportedContent = document.querySelector("#navbarSupportedContent");
+            if (document.documentElement.scrollTop > 500) {
+                navbarSupportedContent.style.cssText = 'background-color: #152f4f !important;';
+                $('.textcolor').attr('style', 'color: white !important; font-size: 21px !important;');
+            }
             $(".nav-item a").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
@@ -743,9 +723,6 @@
 
             const btnScroll = document.querySelector("#btnScroll");
 
-            const navbarSupportedContent = document.querySelector("#navbarSupportedContent");
-
-            console.log($(window).height());
             window.onscroll = function () {scrollFunction()};
 
             $(window).scroll(function () {
@@ -774,28 +751,29 @@
                 }
 
                 if (document.documentElement.scrollTop > 500) {
-
+                    $('.textcolor').attr('style', 'font-size: 21px;');
                     navbarSupportedContent.style.cssText = 'background-color: #152f4f !important;';
-                    $('.textcolor').attr('style', 'color: white !important');
                     $('.textcolor').hover(
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid black !important; color: lightgrey !important');
+                            $(this).attr('style', 'border-bottom: 1px solid lightgrey !important; color: lightgrey !important; font-size: 25px !important;');
                         },
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important');
+                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important; font-size: 21px !important;');
                         }
                     );
+
                 } else {
                     navbarSupportedContent.style.cssText = 'background-color: transparent !important;';
                     $('.textcolor').attr('style', 'color: white !important;');
                     $('.textcolor').hover(
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid white !important; color: white !important');
+                            $(this).attr('style', 'border-bottom: 1px solid white !important; color: white !important;');
                         },
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important');
+                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important;');
                         }
                     );
+
                 }
             }
 
