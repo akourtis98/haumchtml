@@ -330,7 +330,7 @@ h4 {
   background-image: url("./assets/bigimgs/teamwork.jpg");
 
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
 
   position: relative;
 
@@ -848,7 +848,13 @@ input[type="submit"]:hover {
   font-size: 3.3rem;
 }
 
+.upcomingwrapper:hover {
+  -webkit-transform: translateY(-5px) translateX(-3px);
+}
+
 .upcomingwrapper {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
   width: 80%;
   margin: auto auto 20px auto;
 }
@@ -1086,7 +1092,7 @@ html {
 #bigTextFont {
   font-size: 50px !important;
   font-weight: 600;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 .textcolor:hover {
