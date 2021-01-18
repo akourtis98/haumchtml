@@ -5,19 +5,10 @@ todos
   - show pixelated version of teams pics before lazy load
   - refactor code
   - make minified version
-  - make members quotes nicer
-  - make join now turn 360 animation
-  - event desc nicer design
   - make site responsive
 
-- add gr language
-
+- seo optim
+- add langs
 - add chat feature
-
 - add whatsapp link or messenger link
-
-- make collage of previous activities with image links etc
-
-- add upcoming events section
-
-- add haec and hau links etc
+- add simple php blog
