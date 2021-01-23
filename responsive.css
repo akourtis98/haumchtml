@@ -10,12 +10,15 @@
   .navbar-collapse {
     background-color: white !important;
   }
+  /* 
+  #navbarSupportedContent * {
+    color: black !important;
+  } */
 
   .navbar-toggler-icon,
   .navbar-light .navbar-toggler {
     border-color: white !important;
     background-color: white !important;
-    color: white !important;
   }
 
   .nav-item a {

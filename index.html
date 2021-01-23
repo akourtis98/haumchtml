@@ -44,7 +44,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <div id="navbarSupportedContent" class="collapse navbar-collapse" style="background-color: 0 !important;">
                 <a href="./index.html" class="logo" style="position: fixed; margin-left: 150px; margin-right: 10px; margin-top: 20px; float: left !important; 
                     z-index: 999999999999999999999;">
                     <img src="./assets/logos/logo.png" style="width: 80px; border-radius: 50%; cursor: pointer; "
@@ -749,7 +749,21 @@
 
             const btnScroll = document.querySelector("#btnScroll");
 
-            window.onscroll = function () {scrollFunction()};
+            (function () {
+                window.onresize = displayWindowSize;
+                window.onload = displayWindowSize;
+
+                function displayWindowSize() {
+                    let myWidth = window.innerWidth;
+
+                    if (myWidth > 980) {
+                        window.onscroll = function () {scrollFunction()};
+                    } else {
+                        $('.textcolor').attr('style', 'color: black !important;');
+                        navbarSupportedContent.style.cssText = 'background-color: none !important;';
+                    }
+                };
+            })();
 
             $(window).scroll(function () {
                 windowScrollCount = $(this).scrollTop();
