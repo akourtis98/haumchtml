@@ -10,6 +10,10 @@
   .navbar-collapse {
     background-color: white !important;
   }
+
+  #navbarSupportedContent {
+    margin: auto 50px auto auto !important;
+  }
   /* 
   #navbarSupportedContent * {
     color: black !important;
@@ -55,13 +59,34 @@
   }
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 550px) {
+@media only screen and (max-width: 1250px) and (min-width: 550px) {
   .social-network li a {
     font-size: 23px !important;
   }
 
+  .social-network li a {
+    font-size: 29px !important;
+  }
+
+  .textcontent {
+    margin: auto !important;
+    width: 100vw !important;
+  }
+
+  .textcontent p:first-child {
+    font-size: 21px !important;
+  }
+
+  .textcontent p {
+    font-size: 20px !important;
+  }
+
   .icon {
     width: 41px !important;
+  }
+
+  .logo-img {
+    display: none !important;
   }
 
   .nav-item a {
@@ -69,16 +94,17 @@
     margin: 0 !important;
     white-space: nowrap !important;
   }
+
+  .landingpagetext {
+    font-size: 3.5rem;
+  }
 }
 
-@media only screen and (max-width: 1700px) and (min-width: 1200px) {
-  .textcontent p:first-child {
-    font-size: 35px !important;
+@media only screen and (max-width: 1700px) and (min-width: 1250px) {
+  .textcontent {
+    margin: 20px !important;
   }
 
-  .textcontent p {
-    font-size: 19px !important;
-  }
   .social-network li a {
     font-size: 29px !important;
   }
@@ -112,10 +138,10 @@
   .textcontent p:first-child {
     font-size: 25px !important;
   }
-
+  /* 
   .textcontent p {
     font-size: 16px !important;
-  }
+  } */
 
   .landingpagetext {
     font-size: 3rem;
@@ -135,6 +161,19 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .textcontent {
+    margin: auto !important;
+    width: 100vw !important;
+  }
+
+  .textcontent p:first-child {
+    font-size: 17px !important;
+  }
+
+  .textcontent p {
+    font-size: 15px !important;
+  }
+
   div .joinusthingy h1,
   div .joinusthingy p {
     font-size: 50px !important;
@@ -160,16 +199,8 @@
     font-size: 24px;
   }
 
-  .textcontent p:first-child {
-    font-size: 20px !important;
-  }
-
   #content {
     width: 90vw !important;
-  }
-
-  .textcontent p {
-    font-size: 14px !important;
   }
 
   .landingpagetext {
@@ -319,5 +350,19 @@
     position: absolute;
     height: 100%;
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mycard img {
+    margin: auto !important;
+    width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .mycard img {
+    margin: auto !important;
+    width: 250px !important;
   }
 }

@@ -79,6 +79,8 @@ li {
 }
 
 .textcontent {
+  text-align: center;
+  width: 70vw;
   padding: 35px;
 }
 
@@ -131,7 +133,7 @@ li {
 .landingpage {
   background-image: url("./assets/bigimgs/landingwallpaper.jpg");
   background-attachment: fixed;
-  background-position: left top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -385,6 +387,7 @@ textarea {
 
 .featurette-heading {
   color: #31404f;
+  font-size: 28px;
 }
 
 .whatwedoimg {
@@ -440,7 +443,7 @@ html {
 }
 
 .textcolor {
-  font-size: 21px;
+  font-size: 21.5px;
   transition: 0.3s ease-in-out;
   color: white !important ;
 }
@@ -465,4 +468,141 @@ html {
 
 .navbar-toggler {
   margin: 1px !important;
+}
+
+.mycard .myimg img {
+  border-radius: 5px;
+}
+
+.img-container {
+  border: 2px solid black;
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+.img-container img {
+  right: 0;
+  bottom: 0;
+}
+
+.landingpagetext {
+  text-align: center;
+  font-size: 5.5rem;
+  letter-spacing: -2px !important;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.whoweare-container {
+  width: 60vw !important;
+  margin: auto;
+}
+
+/* events styling starts here */
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color 0.15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.event {
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px !important;
+}
+
+.event1 {
+  background-image: url(" ./assets/events/cbs2.jpg");
+  background-size: 100% !important;
+}
+
+.event2 {
+  background-image: url(" ./assets/events/alchimia.jpg");
+  background-size: auto 100% !important;
+}
+
+.event3 {
+  background-image: url(" ./assets/events/event12.jpg");
+  background-size: auto 100% !important;
+}
+
+.event4 {
+  background-image: url(" ./assets/events/star2bux.jpg");
+  background-size: auto 100% !important;
+}
+
+.event5 {
+  background-image: url(" ./assets/events/colaCapture.PNG");
+  background-size: auto 100% !important;
+}
+
+.event6 {
+  background-image: url(" ./assets/events/alchimia.jpg");
+  background-size: auto 100% !important;
+}
+
+.event7 {
+  background-image: url(" ./assets/people/NicoleDalatsi.jpg");
+  background-size: auto 100% !important;
+}
+
+.event8 {
+  background-image: url(" ./assets/events/event4.jpg");
+  background-size: auto 100% !important;
+}
+
+.event9 {
+  background-image: url(" ./assets/events/event6.jpg");
+  background-size: auto 100% !important;
 }
