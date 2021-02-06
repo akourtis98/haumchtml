@@ -439,13 +439,13 @@ html {
 }
 
 .textcolor:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid lightgray;
 }
 
 .textcolor {
   font-size: 21.5px;
   transition: 0.3s ease-in-out;
-  color: white !important ;
+  color: white !important;
 }
 
 .dropdown-menu a {
@@ -560,15 +560,38 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 600px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.layer1 {
+  transition: 0.6s ease-in-out;
+  opacity: 1;
+  display: inline;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .event1 {
-  background-image: url(" ./assets/events/cbs2.jpg");
-  background-size: 100% !important;
+  background-image: url(" ./assets/logos/ourlogo.png");
+  background-size: auto 100% !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  background-size: cover;
+  -webkit-background-size: cover;
+  padding: 0;
+  z-index: -999;
+  margin: 0;
+  height: 100vh;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .event2 {
-  background-image: url(" ./assets/events/alchimia.jpg");
+  background-image: url(" ./assets/events/cbs.jpg");
   background-size: auto 100% !important;
 }
 
@@ -593,7 +616,7 @@ html {
 }
 
 .event7 {
-  background-image: url(" ./assets/people/NicoleDalatsi.jpg");
+  background-image: url(" ./assets/events/test.jpg");
   background-size: auto 100% !important;
 }
 
@@ -605,4 +628,17 @@ html {
 .event9 {
   background-image: url(" ./assets/events/event6.jpg");
   background-size: auto 100% !important;
+}
+
+.showtext-layer1 {
+  transition: 0.1s ease-in !important;
+  margin: -70vh auto auto auto !important;
+  padding: 10px;
+  width: 600px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  visibility: hidden;
 }

@@ -14,7 +14,7 @@
     <!-- bootstrap end -->
 
     <!-- fonts start  -->
-    <link href="./Poppins/Poppins-Black.ttf" rel="stylesheet">
+    <link href="./Poppins/Poppins-#181818.ttf" rel="stylesheet">
     <link href="./Oswald/Oswald-VariableFont_wght.ttf" rel="stylesheet">
     <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -47,7 +47,7 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse" style="background-color: 0 !important;">
                 <a href="./index.html" class="logo" style="position: fixed; margin-left: 150px; margin-right: 10px; margin-top: 20px; float: left !important; 
                     z-index: 999999999999999999999;">
-                    <img src="./assets/logos/logo.png" class="logo-img" alt="">
+                    <img src="./assets/logos/ourlogo.png" class="logo-img" alt="">
                 </a>
                 <ul class="navbar-nav" style="margin-top: -1px; padding-top: 10px !important;">
                     <li class="nav-item">
@@ -146,16 +146,24 @@
             </p>
         </div>
     </div>
-
-    <div class="behind3 centerGrid" id="whatwedo" style="color: white !important;">
-        <div>
-            <div class="textcontent" style="text-align: center; ;">
-                <h1 id="bigTextFont">WHAT WE DO AND HOW YOU BENEFIT</h1>
-            </div>
+    <div class="controller" style="
+  height: 100vh; ">
+        <div class="layer1" style="
+  height: 100vh;">
+        </div>
+        <div class="event flexcontainer event1 position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"
+            style="height: 100%;">
+        </div>
+        <div class="flexcontainer showtext-layer1" style="height: 100%;">
+            <p style="margin:">Hermes, Greek god, son of Zeus and the Pleiad Maia; often identified with the
+                Roman Mercury and with Casmilus or
+                Cadmilus, one of the Cabeiri. His name is probably derived from herma (see herm), the Greek word for
+                a heap of stones,
+                such as was used in the country to indicate boundaries or as a landmark.</p>
         </div>
     </div>
 
-
+    <div id="whatwedo"></div>
     <br>
 
     <br><br>
@@ -249,11 +257,7 @@
         <h1>SOME OF OUR ACTIVITIES</h1>
     </div>
     <br>
-    <br>
-    <div class="event event1 position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-        </div>
-    </div>
+
     <br>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
@@ -280,12 +284,7 @@
             </div>
         </div>
     </div>
-    <!-- <div id="meettheteam" style="position: relative; top: -75px;"></div>
-    <div class="behind5 centerGrid" id="whatwedo" style="color: white !important;">
-        <div class="textcontent" style="text-align: center; ;">
-            <p id="bigTextFont">MEET THE AWESOME TEAM</p>
-        </div>
-    </div> -->
+    <div id="meettheteam" style="position: relative; top: -75px;"></div>
     <br>
     <br>
     <div class="container myheadingunderline">
@@ -651,8 +650,8 @@
         $(document).ready(function () {
             const navbarSupportedContent = document.querySelector("#navbarSupportedContent");
             if (document.documentElement.scrollTop > 500 && window.innerWidth > 980) {
-                navbarSupportedContent.style.cssText = 'background-color: #152f4f !important;';
-                $('.textcolor').attr('style', 'color: white !important;');
+                navbarSupportedContent.style.cssText = 'background-color: #f1f1f1 !important;';
+                $('.textcolor').attr('style', 'color: #181818 !important;');
             }
             $(".nav-item a").on('click', function (event) {
                 if (this.hash !== "") {
@@ -712,25 +711,25 @@
                 }
 
                 if (document.documentElement.scrollTop > 500) {
-                    $('.textcolor').attr('style', 'font-size: 22px;');
+                    $('.textcolor').attr('style', 'font-size: 22px; color: #181818 !important');
                     if (window.innerWidth > 980) {
-                        navbarSupportedContent.style.cssText = 'background-color: #152f4f !important;';
+                        navbarSupportedContent.style.cssText = 'background-color: #f1f1f1 !important;';
                     }
                     $('.textcolor').hover(
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid lightgrey !important; color: lightgrey !important; font-size: 22px;');
+                            $(this).attr('style', 'border-bottom: 1px solid #181818 !important; color: #181818 !important; font-size: 22px;');
                         },
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important; font-size: 22px;');
+                            $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: #181818 !important; font-size: 22px;');
                         }
                     );
 
                 } else {
-                    $('.textcolor').attr('style', 'font-size: 21.5px;');
+                    $('.textcolor').attr('style', 'font-size: 21.5px; color: white');
                     navbarSupportedContent.style.cssText = 'background-color: transparent !important;';
                     $('.textcolor').hover(
                         function () {
-                            $(this).attr('style', 'border-bottom: 1px solid white !important; color: lightgrey !important; font-size: 21.5px;');
+                            $(this).attr('style', 'border-bottom: 1px solid white !important; color: white !important; font-size: 21.5px;');
                         },
                         function () {
                             $(this).attr('style', 'border-bottom: 1px solid transparent !important; color: white !important; font-size: 21.5px;');
@@ -739,6 +738,17 @@
 
                 }
             }
+
+            $('.controller').hover(
+                function () {
+                    $('.showtext-layer1').attr('style', 'visibility: visible;');
+                    $('.event1').attr('style', 'background-color: #202020;filter: blur(2.5px);');
+                },
+                function () {
+                    $('.event1').attr('style', 'background-color: transparent;');
+                    $('.showtext-layer1').attr('style', 'visibility: hidden');
+                }
+            );
 
             btnScroll.addEventListener("click", function () {
                 $("html, body").animate({scrollTop: 0}, "slow")
