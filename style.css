@@ -642,3 +642,21 @@ html {
   font-size: 30px;
   visibility: hidden;
 }
+
+.col-md-4 {
+  display: inline-block;
+  margin-left: -4px;
+}
+.col-md-4 img {
+  width: 600px;
+  height: 600px;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon {
+  border-radius: 50%;
+  width: 20px;
+  margin: 10px !important;
+  height: 20px;
+  color: red !important;
+  background-color: black;
+}
