@@ -8,3 +8,5 @@ $message = htmlspecialchars($_POST['textarea']);
 $msg = "First line of text\nSecond line of text";
 $msg = wordwrap($msg, 70);
 mail("akourtisdev@gmail.com", "My subject", $msg);
+?>
+<meta http-equiv="refresh" content="time; URL=index.php" />
