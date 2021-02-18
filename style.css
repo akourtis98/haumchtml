@@ -611,23 +611,29 @@ html {
 }
 
 .event6 {
-  background-image: url(" ./assets/events/alchimia.jpg");
+  background-image: url(" ./assets/events/bor11.jpg");
+  width: 857px;
+  height: 600px;
   background-size: auto 100% !important;
 }
 
 .event7 {
   background-image: url(" ./assets/events/test.jpg");
   background-size: auto 100% !important;
+  width: 857px;
+  height: 600px;
 }
 
 .event8 {
-  background-image: url(" ./assets/events/event4.jpg");
+  background-image: url(" ./assets/events/ewwe2.jpg");
   background-size: auto 100% !important;
 }
 
 .event9 {
   background-image: url(" ./assets/events/event6.jpg");
   background-size: auto 100% !important;
+  width: 857px;
+  height: 600px;
 }
 
 .showtext-layer1 {
@@ -640,7 +646,6 @@ html {
   letter-spacing: 1.5px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
-  visibility: hidden;
 }
 
 .col-md-4 {
