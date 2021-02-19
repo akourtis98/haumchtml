@@ -9,6 +9,5 @@ todos
 
 - seo optim
 - add langs
-- add chat feature
 - add whatsapp link or messenger link
-- add simple php blog
+- blog php simple
