@@ -1,13 +1,5 @@
 todos
 
-- improve performance in general
-
-  - show pixelated version of teams pics before lazy load
-  - refactor code
-  - make minified version
-  - make site responsive
-
+- make minified version for deployemnt
 - seo optim
-- add langs
-- add whatsapp link or messenger link
 - blog php simple
