@@ -612,28 +612,26 @@ html {
 
 .event6 {
   background-image: url(" ./assets/events/bor11.jpg");
-  width: 857px;
-  height: 600px;
   background-size: auto 100% !important;
 }
 
 .event7 {
   background-image: url(" ./assets/events/test.jpg");
   background-size: auto 100% !important;
-  width: 857px;
-  height: 600px;
 }
 
 .event8 {
-  background-image: url(" ./assets/events/ewwe2.jpg");
+  background-image: url(" ./assets/events/ewwe1.jpg");
   background-size: auto 100% !important;
 }
 
 .event9 {
   background-image: url(" ./assets/events/event6.jpg");
   background-size: auto 100% !important;
-  width: 857px;
-  height: 600px;
+}
+
+.activities .event {
+  margin: 20px !important;
 }
 
 .showtext-layer1 {
